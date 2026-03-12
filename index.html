@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astra-Pack Holdings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="logo">
+        <img src="logos/Astra-Pack Holdings Logo.png" alt="Astra-Pack Holdings" class="logo-img" />
+      </div>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#partners">Partners</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+      <div class="prepaid-dropdown">
+        <button class="btn-prepaid" id="prepaidBtn" aria-expanded="false">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Prepaid Recharge
+          <svg class="prepaid-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="prepaid-menu" id="prepaidMenu">
+          <a href="#" class="prepaid-option">
+            <span class="prepaid-icon prepaid-icon--elec">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </span>
+            <span class="prepaid-option-text">
+              <strong>Electricity</strong>
+              <span>Buy a prepaid electricity token</span>
+            </span>
+          </a>
+          <a href="#" class="prepaid-option">
+            <span class="prepaid-icon prepaid-icon--water">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </span>
+            <span class="prepaid-option-text">
+              <strong>Water</strong>
+              <span>Buy a prepaid water token</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-top">
+      <div class="hero-heading">
+        <h1>Intelligent Systems for<br />Modern Industry</h1>
+      </div>
+      <div class="hero-desc">
+        <p>The global energy landscape is shifting rapidly. Astrapack harnesses digital infrastructure to connect millions of households and businesses to reliable, prepaid electricity, reducing costs, eliminating barriers, and empowering remote communities.</p>
+      </div>
+    </div>
+    <div class="hero-images" id="heroImages">
+      <div class="grey-box tall" id="heroBox1">
+        <div class="slide-overlay" id="overlay1"></div>
+      </div>
+      <div class="grey-box tall hero-box-2" id="heroBox2">
+        <div class="slide-overlay" id="overlay2"></div>
+        <div class="slider-arrows">
+          <button class="arrow-btn" id="prevBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="11 18 5 12 11 6"/></svg>
+          </button>
+          <button class="arrow-btn" id="nextBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 18 19 12 13 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE OFFERING -->
+  <section class="services" id="services">
+    <div class="services-inner">
+      <h2 class="services-title">Service Offering</h2>
+
+      <!-- Row 1: Smart Metering — content left, mosaic right -->
+      <div class="service-row">
+        <div class="service-content">
+          <h3 class="service-cat-heading">Smart Metering</h3>
+          <p class="service-cat-desc">Pre-paid and post-paid metering solutions for electricity, water, and gas, engineered for residential, commercial, and industrial environments. Real-time usage visibility, reduced losses, and seamless billing for utilities and end-users alike.</p>
+          <div class="service-cards">
+            <div class="service-card">
+              <h4>Electrical<br>Smart Meters</h4>
+              <p>Pre-paid and post-paid smart electricity meters that give utilities and property managers accurate, real-time consumption data, eliminating estimated billing and revenue leakage.</p>
+              <div class="service-card-icon">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#0A6EBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+            </div>
+            <div class="service-card">
+              <h4>Smart<br>Water Meters</h4>
+              <p>Pre-paid and post-paid smart water meters that give utilities and property managers accurate, real-time consumption data, eliminating estimated billing and revenue leakage.</p>
+              <div class="service-card-icon">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#0A6EBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="color-mosaic mosaic-a">
+          <div class="block-tall"></div>
+          <div class="block-top"></div>
+          <div class="block-bottom"></div>
+        </div>
+      </div>
+
+      <div class="controlled-cards">
+        <div class="ctrl-card">
+          <div class="ctrl-card-body">
+            <h4>Home</h4>
+            <p>Smart metering for residential properties, giving homeowners real-time visibility into electricity and water usage with seamless prepaid control.</p>
+            <p>Our meters support prepaid and postpaid configurations, integrating with mobile top-up platforms so households can recharge anytime. Tamper alerts and remote disconnection keep utilities in control.</p>
+          </div>
+        </div>
+        <div class="ctrl-card ctrl-card--inverse">
+          <div class="ctrl-card-body">
+            <h4>Commercial</h4>
+            <p>Scalable metering for offices, retail centres, and multi-tenant buildings, reducing revenue leakage and enabling precise cost allocation across tenants.</p>
+            <p>Our sub-metering systems let property managers bill each tenant accurately. Real-time dashboards and automated reports eliminate manual meter reading entirely.</p>
+          </div>
+        </div>
+        <div class="ctrl-card">
+          <div class="ctrl-card-body">
+            <h4>Industrial</h4>
+            <p>Heavy-duty metering for factories, mines, and large-scale sites, with full integration into existing SCADA and ERP platforms.</p>
+            <p>Our meters handle high-load three-phase environments and support demand management to avoid peak-tariff penalties, feeding data directly into your operations infrastructure.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTROLLED SYSTEMS -->
+  <section class="controlled">
+    <div class="controlled-inner">
+      <h2 class="controlled-heading">Controlled Systems</h2>
+      <p class="controlled-desc">Industrial automation and control systems engineered for reliability and precision, covering home automation, safety systems, and full lifecycle maintenance support across commercial and industrial environments.</p>
+      <div class="controlled-cards">
+
+        <div class="ctrl-card">
+          <div class="ctrl-img-placeholder" style="background-image: url('images/home automation.jpg');"></div>
+          <div class="ctrl-card-body">
+            <h4>Home Automation</h4>
+            <p>Automated lighting, distributed audio, home cinema, smart security, video intercoms, gas fireplace control, air conditioning automation, and HD/IP TV. Your home, fully intelligent.</p>
+            <div class="ctrl-chips">
+              <span class="ctrl-chip">Smart Lighting</span>
+              <span class="ctrl-chip">Home Cinema</span>
+              <span class="ctrl-chip">CCTV & Intercoms</span>
+              <span class="ctrl-chip">Climate Control</span>
+              <span class="ctrl-chip">HD/IP TV</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ctrl-card ctrl-card--inverse">
+          <div class="ctrl-card-body">
+            <h4>Commercial Automation</h4>
+            <p>Boardroom and meeting room automation, ICT installations, access control systems, CCTV, nurse call and healthcare systems, and room environment monitoring, all optimised for productivity and security.</p>
+            <div class="ctrl-chips">
+              <span class="ctrl-chip">Access Control</span>
+              <span class="ctrl-chip">Boardroom AV</span>
+              <span class="ctrl-chip">Nurse Call</span>
+              <span class="ctrl-chip">ICT Installations</span>
+              <span class="ctrl-chip">CCTV</span>
+            </div>
+          </div>
+          <div class="ctrl-img-placeholder" style="background-image: url('images/office automation.jpg');"></div>
+        </div>
+
+        <div class="ctrl-card">
+          <div class="ctrl-img-placeholder" style="background-image: url('images/industrial automation.jpg');"></div>
+          <div class="ctrl-card-body">
+            <h4>Industrial Automation</h4>
+            <p>PLC programming, HMI interfaces, SCADA systems, process and machine automation, pump automation, control panel design, and industrial networking, making your plant faster, safer, and smarter.</p>
+            <div class="ctrl-chips">
+              <span class="ctrl-chip">PLC & SCADA</span>
+              <span class="ctrl-chip">HMI Interfaces</span>
+              <span class="ctrl-chip">Pump Automation</span>
+              <span class="ctrl-chip">Control Panels</span>
+              <span class="ctrl-chip">Industrial Networks</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section class="who" id="about">
+    <div class="who-inner">
+      <div class="who-header">
+        <h2 class="who-title">Who We Are</h2>
+        <p class="who-text">Astra-Pack Holdings is a wholly citizen-owned company and results-driven industrial automation provider delivering smart, innovative and reliable solutions from Gaborone. We specialize in transforming traditional operations into intelligent, connected systems that improve productivity, reduce costs, and enhance decision-making.</p>
+        <p class="who-text">We work closely with engineers, architects, security specialists and property developers to deliver custom-designed installations across households, office spaces, commercial premises and industrial sites throughout Botswana.</p>
+      </div>
+      <div class="who-grid-new">
+        <div class="wg-box wg-box--a"></div>
+        <div class="wg-box wg-box--b"></div>
+        <div class="wg-box wg-box--c"></div>
+        <div class="wg-box wg-box--d"></div>
+        <div class="wg-box wg-box--e"></div>
+        <div class="wg-box wg-box--f"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS & PARTNERS -->
+  <section class="partners" id="partners">
+    <div class="partners-header">
+      <p class="partners-label">TRUSTED BY</p>
+      <h2 class="partners-title">Clients &amp; Partners</h2>
+      <p class="partners-desc">From diamonds to universities, Astra-Pack systems run across Botswana's most recognised organisations, powered by world-class technology brands.</p>
+    </div>
+
+    <div class="partners-track-wrap">
+      <p class="track-label">CLIENTS WE'VE SERVED</p>
+      <div class="logo-track-outer">
+        <div class="logo-track">
+          <div class="logo-pill"><img src="logos/Lucara.png" alt="Lucara" /></div>
+          <div class="logo-pill"><img src="logos/DTC.png" alt="DTC Botswana" /></div>
+          <div class="logo-pill"><img src="logos/debswana.png" alt="Debswana" /></div>
+          <div class="logo-pill"><img src="logos/Bitri.png" alt="BITRI" /></div>
+          <div class="logo-pill"><img src="logos/BIUST.png" alt="BIUST" /></div>
+          <div class="logo-pill"><img src="logos/Morox properties.png" alt="Morox Properties" /></div>
+          <div class="logo-pill"><img src="logos/New Capitol.png" alt="New Capitol" /></div>
+          <div class="logo-pill"><img src="logos/Asphalt Botswana.png" alt="Asphalt Botswana" /></div>
+          <div class="logo-pill"><img src="logos/BNSC.png" alt="BNSC" /></div>
+          <div class="logo-pill"><img src="logos/DLG.png" alt="DLG" /></div>
+          <div class="logo-pill"><img src="logos/Ramalepa.png" alt="Ramalepa" /></div>
+          <div class="logo-pill"><img src="logos/VFS Global.png" alt="VFS Global" /></div>
+          <div class="logo-pill"><img src="logos/RCI.png" alt="RCI" /></div>
+          <!-- duplicate for seamless loop -->
+          <div class="logo-pill"><img src="logos/Lucara.png" alt="Lucara" /></div>
+          <div class="logo-pill"><img src="logos/DTC.png" alt="DTC Botswana" /></div>
+          <div class="logo-pill"><img src="logos/debswana.png" alt="Debswana" /></div>
+          <div class="logo-pill"><img src="logos/Bitri.png" alt="BITRI" /></div>
+          <div class="logo-pill"><img src="logos/BIUST.png" alt="BIUST" /></div>
+          <div class="logo-pill"><img src="logos/Morox properties.png" alt="Morox Properties" /></div>
+          <div class="logo-pill"><img src="logos/New Capitol.png" alt="New Capitol" /></div>
+          <div class="logo-pill"><img src="logos/Asphalt Botswana.png" alt="Asphalt Botswana" /></div>
+          <div class="logo-pill"><img src="logos/BNSC.png" alt="BNSC" /></div>
+          <div class="logo-pill"><img src="logos/DLG.png" alt="DLG" /></div>
+          <div class="logo-pill"><img src="logos/Ramalepa.png" alt="Ramalepa" /></div>
+          <div class="logo-pill"><img src="logos/VFS Global.png" alt="VFS Global" /></div>
+          <div class="logo-pill"><img src="logos/RCI.png" alt="RCI" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="partners-track-wrap">
+      <p class="track-label">TECHNOLOGY BRANDS</p>
+      <div class="logo-track-outer">
+        <div class="logo-track logo-track--reverse">
+          <div class="logo-pill"><img src="logos/Allen bradley.png" alt="Allen Bradley" /></div>
+          <div class="logo-pill"><img src="logos/SIEMENS.png" alt="Siemens" /></div>
+          <div class="logo-pill"><img src="logos/Endres Hauser.png" alt="Endress+Hauser" /></div>
+          <div class="logo-pill"><img src="logos/Suprema.png" alt="Suprema" /></div>
+          <div class="logo-pill"><img src="logos/Extron.png" alt="Extron" /></div>
+          <div class="logo-pill"><img src="logos/Lutron.png" alt="Lutron" /></div>
+          <div class="logo-pill"><img src="logos/Promethean.png" alt="Promethean" /></div>
+          <div class="logo-pill"><img src="logos/Akuvox.png" alt="Akuvox" /></div>
+          <div class="logo-pill"><img src="logos/Room Alert.png" alt="Room Alert" /></div>
+          <div class="logo-pill"><img src="logos/Honeywell.png" alt="Honeywell" /></div>
+          <div class="logo-pill"><img src="logos/Teams.png" alt="Teams" /></div>
+          <!-- duplicate for seamless loop -->
+          <div class="logo-pill"><img src="logos/Allen bradley.png" alt="Allen Bradley" /></div>
+          <div class="logo-pill"><img src="logos/SIEMENS.png" alt="Siemens" /></div>
+          <div class="logo-pill"><img src="logos/Endres Hauser.png" alt="Endress+Hauser" /></div>
+          <div class="logo-pill"><img src="logos/Suprema.png" alt="Suprema" /></div>
+          <div class="logo-pill"><img src="logos/Extron.png" alt="Extron" /></div>
+          <div class="logo-pill"><img src="logos/Lutron.png" alt="Lutron" /></div>
+          <div class="logo-pill"><img src="logos/Promethean.png" alt="Promethean" /></div>
+          <div class="logo-pill"><img src="logos/Akuvox.png" alt="Akuvox" /></div>
+          <div class="logo-pill"><img src="logos/Room Alert.png" alt="Room Alert" /></div>
+          <div class="logo-pill"><img src="logos/Honeywell.png" alt="Honeywell" /></div>
+          <div class="logo-pill"><img src="logos/Teams.png" alt="Teams" /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT US -->
+  <section class="contact" id="contact">
+    <div class="contact-card">
+      <div class="contact-left">
+        <h2 class="contact-heading">Get in<br>touch with us</h2>
+        <p class="contact-intro">We're here to help! Whether you have a question about our services, need assistance with your account, or want to provide feedback, our team is ready to assist you.</p>
+        <div class="contact-details">
+          <p class="contact-detail-label">Email:</p>
+          <a href="mailto:info@astrapack.co.bw" class="contact-detail-value">info@astrapack.co.bw</a>
+          <p class="contact-detail-label">Phone:</p>
+          <p class="contact-detail-value">+267 78 483 511</p>
+          <p class="contact-detail-label">Address:</p>
+          <p class="contact-detail-value contact-address">PLOT 20689, UNIT 3 BLOCK 3 INDUSTRIAL, GABORONE<br>available Monday to Friday, 8AM – 5PM CAT</p>
+        </div>
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/company/astra-pack-holdings/" target="_blank" class="social-link">
+            <img src="socials/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://www.facebook.com/astrapackholdings/" target="_blank" class="social-link">
+            <img src="socials/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/astrapackholdings/" target="_blank" class="social-link">
+            <img src="socials/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="Enter your first name..." />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Enter your last name..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email address..." />
+          </div>
+          <div class="form-group">
+            <label>How can we help you</label>
+            <textarea placeholder="Enter your message..."></textarea>
+          </div>
+          <button type="submit" class="btn-send">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="logos/Astra-Pack Holdings Logo.png" alt="Astra-Pack Holdings" class="footer-logo" />
+        <p class="footer-tagline">Intelligent systems for modern industry, delivering smart, connected solutions across Botswana.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/astra-pack-holdings/" target="_blank" class="social-link">
+            <img src="socials/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://www.facebook.com/astrapackholdings/" target="_blank" class="social-link">
+            <img src="socials/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/astrapackholdings/" target="_blank" class="social-link">
+            <img src="socials/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-col-title">Services</h5>
+        <ul>
+          <li><a href="#services">Smart Metering</a></li>
+          <li><a href="#services">Controlled Systems</a></li>
+          <li><a href="#services">Home Automation</a></li>
+          <li><a href="#services">Safety &amp; Security</a></li>
+          <li><a href="#services">Maintenance &amp; SLA</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-col-title">Company</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#partners">Clients &amp; Partners</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#contact">Prepaid Recharge</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-col-title">Contact</h5>
+        <ul class="footer-contact-list">
+          <li>
+            <span class="footer-contact-label">Email</span>
+            <a href="mailto:info@astrapack.co.bw">info@astrapack.co.bw</a>
+          </li>
+          <li>
+            <span class="footer-contact-label">Phone</span>
+            <span>+267 78 483 511</span>
+          </li>
+          <li>
+            <span class="footer-contact-label">Address</span>
+            <span>Plot 20689, Unit 3 Block 3 Industrial, Gaborone</span>
+          </li>
+          <li>
+            <span class="footer-contact-label">Hours</span>
+            <span>Mon – Fri, 8AM – 5PM CAT</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2025 Astra-Pack Holdings (Pty) Ltd. All rights reserved.</p>
+        <p>Registered in Botswana &middot; Wholly citizen-owned</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- PREPAID MODAL -->
+<div class="prepaid-modal-overlay" id="prepaidOverlay">
+  <div class="prepaid-modal" role="dialog" aria-modal="true">
+    <div class="prepaid-modal-header" id="prepaidModalHeader">
+      <div>
+        <p class="prepaid-modal-label">ASTRAPACK · BOTSWANA</p>
+        <h2 class="prepaid-modal-title" id="prepaidModalTitle">Buy Prepaid Electricity</h2>
+      </div>
+      <button class="prepaid-modal-close" id="prepaidModalClose" aria-label="Close">&#x2715;</button>
+    </div>
+
+    <!-- Step 1: Verify -->
+    <div class="prepaid-modal-body" id="prepaidStep1">
+      <div class="prepaid-field">
+        <label for="meterNumber">METER NUMBER</label>
+        <input type="text" id="meterNumber" placeholder="e.g. 888000111222" />
+      </div>
+      <div class="prepaid-field">
+        <label for="meterPhone">PHONE</label>
+        <input type="tel" id="meterPhone" placeholder="+267 7X XXX XXX" />
+      </div>
+      <div class="prepaid-field">
+        <label for="meterEmail">EMAIL</label>
+        <input type="email" id="meterEmail" placeholder="you@example.com" />
+      </div>
+      <p class="prepaid-error" id="prepaidError"></p>
+      <button class="prepaid-verify-btn" id="prepaidVerifyBtn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Verify
+      </button>
+      <p class="prepaid-secure">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        256-bit SSL encrypted &middot; Details never stored
+      </p>
+    </div>
+
+    <!-- Step 2: Confirm & Select Amount -->
+    <div class="prepaid-modal-body" id="prepaidStep2" style="display:none;">
+      <div class="prepaid-customer-card">
+        <p class="prepaid-customer-label">CUSTOMER DETAILS</p>
+        <div class="prepaid-customer-row">
+          <span>Customer Name:</span>
+          <strong id="confirmName"></strong>
+        </div>
+        <div class="prepaid-customer-row">
+          <span>Meter No:</span>
+          <strong id="confirmMeter"></strong>
+        </div>
+        <div class="prepaid-customer-row">
+          <span>Utility:</span>
+          <strong id="confirmUtility"></strong>
+        </div>
+        <hr class="prepaid-divider" />
+        <p class="prepaid-customer-note">Please verify your customer details before you proceed.</p>
+      </div>
+
+      <div class="prepaid-field">
+        <label for="rechargeAmount">RECHARGE AMOUNT (BWP)</label>
+        <input type="number" id="rechargeAmount" placeholder="Enter amount" min="20" />
+        <span class="prepaid-min-note"><em>minimum</em> recharge of 20 pula</span>
+      </div>
+
+      <div class="prepaid-quick-section">
+        <p class="prepaid-quick-label">QUICK RECHARGE (BWP)</p>
+        <div class="prepaid-quick-grid">
+          <button class="prepaid-quick-btn" data-amount="20">20</button>
+          <button class="prepaid-quick-btn" data-amount="50">50</button>
+          <button class="prepaid-quick-btn" data-amount="100">100</button>
+          <button class="prepaid-quick-btn" data-amount="200">200</button>
+          <button class="prepaid-quick-btn" data-amount="300">300</button>
+          <button class="prepaid-quick-btn" data-amount="500">500</button>
+        </div>
+      </div>
+
+      <button class="prepaid-verify-btn" id="prepaidProceedBtn">
+        Proceed &nbsp;&#x2192;
+      </button>
+    </div>
+
+    <!-- Step 3: Card Details -->
+    <div class="prepaid-modal-body" id="prepaidStep3" style="display:none;">
+      <div class="prepaid-payment-summary">
+        <div>
+          <p class="prepaid-paying-label">PAYING FOR</p>
+          <p class="prepaid-paying-detail">
+            <span id="payUtilityIcon"></span>
+            <strong id="payDetail"></strong>
+          </p>
+        </div>
+        <div class="prepaid-paying-amount">
+          <p class="prepaid-paying-label">AMOUNT</p>
+          <p class="prepaid-amount-value" id="payAmount"></p>
+        </div>
+      </div>
+
+      <div class="prepaid-field">
+        <label for="cardName">NAME ON CARD</label>
+        <input type="text" id="cardName" placeholder="e.g. John Doe" />
+      </div>
+      <div class="prepaid-field">
+        <label for="cardNumber">CARD NUMBER</label>
+        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" />
+      </div>
+      <div class="prepaid-card-row">
+        <div class="prepaid-field">
+          <label for="cardExpiry">EXPIRY</label>
+          <input type="text" id="cardExpiry" placeholder="MM / YY" maxlength="7" />
+        </div>
+        <div class="prepaid-field">
+          <label for="cardCvv">CVV</label>
+          <input type="text" id="cardCvv" placeholder="···" maxlength="4" />
+        </div>
+      </div>
+
+      <p class="prepaid-accepted">
+        <span>Accepted:</span>
+        <span class="prepaid-badge">VISA</span>
+        <span class="prepaid-badge">MC</span>
+        <span class="prepaid-badge">MyZaka</span>
+        <span class="prepaid-badge">Smega</span>
+      </p>
+
+      <button class="prepaid-verify-btn" id="prepaidPayBtn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Pay Now
+      </button>
+      <button class="prepaid-back-btn" id="prepaidBackBtn">&#x2190; Back</button>
+      <p class="prepaid-secure">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        256-bit SSL encrypted &middot; PCI DSS compliant
+      </p>
+    </div>
+
+    <!-- Step 4: Success -->
+    <div class="prepaid-modal-body prepaid-success-body" id="prepaidStep4" style="display:none;">
+      <div class="prepaid-success-icon" id="prepaidSuccessIcon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <p class="prepaid-success-title">Payment Successful</p>
+      <p class="prepaid-success-sub" id="prepaidSuccessSub"></p>
+
+      <div class="prepaid-token-card">
+        <p class="prepaid-token-label">YOUR TOKEN</p>
+        <p class="prepaid-token-number" id="prepaidToken"></p>
+        <button class="prepaid-copy-btn" id="prepaidCopyBtn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          <span id="copyLabel">Copy token</span>
+        </button>
+      </div>
+
+      <div class="prepaid-email-note">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span>Token sent to <strong id="successEmail"></strong></span>
+      </div>
+
+      <button class="prepaid-download-btn" id="prepaidDownloadBtn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download PDF Receipt
+      </button>
+
+      <button class="prepaid-verify-btn" id="prepaidDoneBtn">Done</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
