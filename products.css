@@ -1,0 +1,270 @@
+/* ── PRODUCTS PAGE ─────────────────────────────────────────── */
+
+.nav-active {
+  color: #0A6EBD !important;
+  font-weight: 700;
+}
+
+.prod-category-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6B7F99;
+  margin-bottom: 16px;
+}
+
+.prod-grid--all {
+  margin-bottom: 40px;
+}
+
+.prod-hero {
+  background: #0A6EBD;
+  padding: 80px 60px 60px;
+}
+
+.prod-hero-inner {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.prod-hero-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 12px;
+}
+
+.prod-hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.prod-hero-sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+/* ── SECTION ── */
+
+.prod-section {
+  padding: 60px 60px 80px;
+  background: #f5f8fc;
+  min-height: 60vh;
+}
+
+.prod-inner {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+/* ── TABS ── */
+
+.prod-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #dde6f0;
+  padding-bottom: 0;
+}
+
+.prod-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6B7F99;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.prod-tab:hover {
+  color: #0A6EBD;
+}
+
+.prod-tab[aria-selected="true"] {
+  color: #0A6EBD;
+  border-bottom-color: #0A6EBD;
+}
+
+/* ── GRID ── */
+
+.prod-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+/* ── CARD ── */
+
+.prod-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #dde6f0;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.prod-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(10,110,189,0.12);
+}
+
+.prod-card-img {
+  height: 240px;
+  background: #c8d8e8 center/cover no-repeat;
+}
+
+.prod-card-body {
+  padding: 20px 18px 22px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 8px;
+  row-gap: 8px;
+  flex: 1;
+}
+
+.prod-badge {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.prod-type {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  justify-self: end;
+}
+
+.prod-card-body h3 {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0d1b2a;
+  line-height: 1.3;
+}
+
+.prod-card-body p {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  font-size: 0.82rem;
+  line-height: 1.65;
+  color: #6B7F99;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── TYPE LABEL ── */
+
+.prod-type {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.prod-type--elec {
+  color: #0A6EBD;
+}
+
+.prod-type--water {
+  color: #1b7a56;
+}
+
+/* ── BADGE ── */
+
+.prod-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: #e6f2fb;
+  color: #0A6EBD;
+  border-radius: 4px;
+  padding: 3px 8px;
+  align-self: flex-start;
+}
+
+.prod-badge--commercial {
+  background: #e6f5f0;
+  color: #1b7a56;
+}
+
+.prod-badge--industrial {
+  background: #fef3e6;
+  color: #b06a00;
+}
+
+.prod-specs,
+.prod-cta {
+  display: none;
+}
+
+
+/* ── BOTTOM BANNER ── */
+
+.prod-cta-banner {
+  background: #0A6EBD;
+  border-radius: 10px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.prod-cta-banner-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.prod-cta-banner-sub {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.prod-cta-banner-btn {
+  flex-shrink: 0;
+  background: #fff;
+  color: #0A6EBD;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 11px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+.prod-cta-banner-btn:hover {
+  background: #eaf5fb;
+}

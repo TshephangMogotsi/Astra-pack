@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — Astra-Pack Holdings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="products.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logos/Astra-Pack Holdings Logo.png" alt="Astra-Pack Holdings" class="logo-img" />
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html#services">Services</a>
+        <a href="products.html" class="nav-active">Products</a>
+        <a href="index.html#partners">Partners</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#contact">Contact Us</a>
+      </nav>
+      <div class="prepaid-dropdown">
+        <button class="btn-prepaid" id="prepaidBtn" aria-expanded="false">
+          Prepaid Recharge
+          <svg class="prepaid-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="prepaid-menu" id="prepaidMenu">
+          <a href="#" class="prepaid-option" data-type="electricity">
+            <span class="prepaid-icon prepaid-icon--elec">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </span>
+            <span class="prepaid-option-text">
+              <strong>Electricity</strong>
+              <span>Buy a prepaid electricity token</span>
+            </span>
+          </a>
+          <a href="#" class="prepaid-option" data-type="water">
+            <span class="prepaid-icon prepaid-icon--water">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </span>
+            <span class="prepaid-option-text">
+              <strong>Water</strong>
+              <span>Buy a prepaid water token</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="prod-hero">
+    <div class="prod-hero-inner">
+      <p class="prod-hero-label">Smart Metering</p>
+      <h1 class="prod-hero-title">Our Products</h1>
+      <p class="prod-hero-sub">Pre-paid and post-paid metering solutions engineered for residential, commercial, and industrial environments across Botswana.</p>
+    </div>
+  </section>
+
+  <!-- TABS -->
+  <section class="prod-section">
+    <div class="prod-inner">
+
+      <div class="prod-tabs" role="tablist">
+        <button class="prod-tab" id="tab-all" role="tab" aria-selected="true" aria-controls="panel-all">
+          All Products
+        </button>
+        <button class="prod-tab" id="tab-electricity" role="tab" aria-selected="false" aria-controls="panel-electricity">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Electrical Smart Meters
+        </button>
+        <button class="prod-tab" id="tab-water" role="tab" aria-selected="false" aria-controls="panel-water">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          Smart Water Meters
+        </button>
+      </div>
+
+      <!-- ALL PRODUCTS PANEL -->
+      <div class="prod-panel" id="panel-all" role="tabpanel" aria-labelledby="tab-all">
+        <div class="prod-grid">
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/meter blue.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge">Residential</span>
+              <span class="prod-type prod-type--elec">Electrical</span>
+              <h3>Single Phase Prepaid Meter</h3>
+              <p>Compact, tamper-resistant single phase meter for household installations with STS-compliant prepaid tokens.</p>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/meter.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge prod-badge--commercial">Commercial</span>
+              <span class="prod-type prod-type--elec">Electrical</span>
+              <h3>Three Phase Prepaid Meter</h3>
+              <p>High-capacity three phase meter for offices and multi-tenant buildings with sub-metering support.</p>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/Meter remote.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge prod-badge--industrial">Industrial</span>
+              <span class="prod-type prod-type--elec">Electrical</span>
+              <h3>AMI Smart Meter</h3>
+              <p>Advanced Metering Infrastructure with two-way communication, real-time data, and remote load control.</p>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/meter blue.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge">Residential</span>
+              <span class="prod-type prod-type--elec">Electrical</span>
+              <h3>DIN Rail Prepaid Meter</h3>
+              <p>Space-saving DIN rail mount meter for distribution boards and compact panel installations.</p>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/meter.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge">Residential</span>
+              <span class="prod-type prod-type--water">Water</span>
+              <h3>Residential Prepaid Water Meter</h3>
+              <p>STS-compliant prepaid water meter for household connections with keypad token entry.</p>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/meter blue.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge prod-badge--commercial">Commercial</span>
+              <span class="prod-type prod-type--water">Water</span>
+              <h3>Bulk Prepaid Water Meter</h3>
+              <p>High-flow bulk meter for commercial properties with sub-metering and automated reporting.</p>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/Meter remote.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge prod-badge--industrial">Industrial</span>
+              <span class="prod-type prod-type--water">Water</span>
+              <h3>AMR Smart Water Meter</h3>
+              <p>Automated Meter Reading with remote data collection, leak detection, and management platform integration.</p>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/meter.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge prod-badge--industrial">Industrial</span>
+              <span class="prod-type prod-type--water">Water</span>
+              <h3>Industrial Flow Meter</h3>
+              <p>Heavy-duty electromagnetic flow meter for factories and large municipal reticulation networks.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-cta-banner">
+          <div>
+            <p class="prod-cta-banner-title">Not sure which meter fits your site?</p>
+            <p class="prod-cta-banner-sub">Our team will assess your requirements and recommend the right solution.</p>
+          </div>
+          <a href="index.html#contact" class="prod-cta-banner-btn">Talk to an Expert</a>
+        </div>
+      </div>
+
+      <!-- ELECTRICITY PANEL -->
+      <div class="prod-panel" id="panel-electricity" role="tabpanel" aria-labelledby="tab-electricity" hidden>
+        <div class="prod-grid">
+
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/meter blue.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge">Residential</span>
+              <span class="prod-type prod-type--elec">Electrical</span>
+              <h3>Single Phase Prepaid Meter</h3>
+              <p>Compact, tamper-resistant single phase meter for household installations. Supports STS-compliant prepaid tokens and integrates with all major mobile top-up platforms.</p>
+              <div class="prod-specs">
+                <span>STS Compliant</span>
+                <span>Tamper Alert</span>
+                <span>Remote Disconnect</span>
+                <span>LCD Display</span>
+              </div>
+              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/meter.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge prod-badge--commercial">Commercial</span>
+              <span class="prod-type prod-type--elec">Electrical</span>
+              <h3>Three Phase Prepaid Meter</h3>
+              <p>High-capacity three phase meter for offices, retail units, and multi-tenant buildings. Supports split billing and sub-metering for accurate tenant cost allocation.</p>
+              <div class="prod-specs">
+                <span>3-Phase</span>
+                <span>Sub-metering</span>
+                <span>Data Logging</span>
+                <span>Modbus/RS485</span>
+              </div>
+              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/Meter remote.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge prod-badge--industrial">Industrial</span>
+              <span class="prod-type prod-type--elec">Electrical</span>
+              <h3>AMI Smart Meter</h3>
+              <p>Advanced Metering Infrastructure meter with two-way communication. Delivers real-time consumption data, demand management, and remote load control for large-scale sites.</p>
+              <div class="prod-specs">
+                <span>AMI/AMR</span>
+                <span>GPRS/RF Comms</span>
+                <span>Demand Control</span>
+                <span>SCADA Ready</span>
+              </div>
+              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/meter blue.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge">Residential</span>
+              <span class="prod-type prod-type--elec">Electrical</span>
+              <h3>DIN Rail Prepaid Meter</h3>
+              <p>Space-saving DIN rail mount meter designed for distribution boards and compact panel installations. Ideal for sectional title and apartment complexes.</p>
+              <div class="prod-specs">
+                <span>DIN Mount</span>
+                <span>Prepaid</span>
+                <span>Compact</span>
+                <span>Plug &amp; Play</span>
+              </div>
+              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="prod-cta-banner">
+          <div>
+            <p class="prod-cta-banner-title">Not sure which meter fits your site?</p>
+            <p class="prod-cta-banner-sub">Our team will assess your requirements and recommend the right solution.</p>
+          </div>
+          <a href="index.html#contact" class="prod-cta-banner-btn">Talk to an Expert</a>
+        </div>
+      </div>
+
+      <!-- WATER PANEL -->
+      <div class="prod-panel" id="panel-water" role="tabpanel" aria-labelledby="tab-water" hidden>
+        <div class="prod-grid">
+
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/meter.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge">Residential</span>
+              <span class="prod-type prod-type--water">Water</span>
+              <h3>Residential Prepaid Water Meter</h3>
+              <p>STS-compliant prepaid water meter for household connections. Supports keypad token entry and integrates with mobile recharge platforms for easy top-ups.</p>
+              <div class="prod-specs">
+                <span>STS Compliant</span>
+                <span>Keypad Entry</span>
+                <span>Tamper Alert</span>
+                <span>LCD Display</span>
+              </div>
+              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/meter blue.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge prod-badge--commercial">Commercial</span>
+              <span class="prod-type prod-type--water">Water</span>
+              <h3>Bulk Prepaid Water Meter</h3>
+              <p>High-flow bulk meter for commercial properties and multi-unit developments. Enables accurate billing per tenant with full sub-metering capability and automated reporting.</p>
+              <div class="prod-specs">
+                <span>High Flow Rate</span>
+                <span>Sub-metering</span>
+                <span>Auto Reporting</span>
+                <span>Data Logging</span>
+              </div>
+              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/Meter remote.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge prod-badge--industrial">Industrial</span>
+              <span class="prod-type prod-type--water">Water</span>
+              <h3>AMR Smart Water Meter</h3>
+              <p>Automated Meter Reading water meter with remote data collection. Eliminates manual reading, detects leaks in real time, and feeds consumption data directly into your management platform.</p>
+              <div class="prod-specs">
+                <span>AMR/AMI</span>
+                <span>Leak Detection</span>
+                <span>GPRS Comms</span>
+                <span>SCADA Ready</span>
+              </div>
+              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card-img" style="background-image: url('images/meter.jpg');"></div>
+            <div class="prod-card-body">
+              <span class="prod-badge prod-badge--industrial">Industrial</span>
+              <span class="prod-type prod-type--water">Water</span>
+              <h3>Industrial Flow Meter</h3>
+              <p>Heavy-duty electromagnetic flow meter for factories, processing plants, and large municipal reticulation networks. Delivers precise volumetric measurement under high-pressure conditions.</p>
+              <div class="prod-specs">
+                <span>Electromagnetic</span>
+                <span>High Pressure</span>
+                <span>Pulse Output</span>
+                <span>IP68 Rated</span>
+              </div>
+              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="prod-cta-banner">
+          <div>
+            <p class="prod-cta-banner-title">Need a custom water metering solution?</p>
+            <p class="prod-cta-banner-sub">We design and deploy end-to-end metering infrastructure for utilities and developers.</p>
+          </div>
+          <a href="index.html#contact" class="prod-cta-banner-btn">Talk to an Expert</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="logos/Astra-Pack Holdings Logo.png" alt="Astra-Pack Holdings" class="footer-logo" />
+        <p class="footer-tagline">Intelligent systems for modern industry, delivering smart, connected solutions across Botswana.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/astra-pack-holdings/" target="_blank" class="social-link">
+            <img src="socials/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://www.facebook.com/astrapackholdings/" target="_blank" class="social-link">
+            <img src="socials/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/astrapackholdings/" target="_blank" class="social-link">
+            <img src="socials/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-title">Services</h5>
+        <ul>
+          <li><a href="index.html#services">Smart Metering</a></li>
+          <li><a href="index.html#services">Controlled Systems</a></li>
+          <li><a href="index.html#services">Home Automation</a></li>
+          <li><a href="index.html#services">Commercial Automation</a></li>
+          <li><a href="index.html#services">Industrial Automation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-title">Company</h5>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#partners">Clients &amp; Partners</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-title">Contact</h5>
+        <ul class="footer-contact-list">
+          <li>
+            <span class="footer-contact-label">Email</span>
+            <a href="mailto:info@astrapack.co.bw">info@astrapack.co.bw</a>
+          </li>
+          <li>
+            <span class="footer-contact-label">Phone</span>
+            <span>+267 78 483 511</span>
+          </li>
+          <li>
+            <span class="footer-contact-label">Address</span>
+            <span>Plot 20689, Unit 3 Block 3 Industrial, Gaborone</span>
+          </li>
+          <li>
+            <span class="footer-contact-label">Hours</span>
+            <span>Mon – Fri, 8AM – 5PM CAT</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2025 Astra-Pack Holdings (Pty) Ltd. All rights reserved.</p>
+        <p>Registered in Botswana &middot; Wholly citizen-owned</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+</body>
+</html>

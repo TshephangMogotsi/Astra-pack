@@ -445,9 +445,44 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1;
 }
 
-.service-card-icon {
-  margin-top: 4px;
+.service-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
 }
+
+.service-card-icon {
+  line-height: 0;
+}
+
+.service-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #0A6EBD;
+  letter-spacing: 0.02em;
+}
+
+a.service-card--link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  position: relative;
+}
+
+a.service-card--link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(10, 110, 189, 0.15);
+  background: #eaf5fb;
+}
+
+a.service-card--link:hover h4 {
+  color: #0A6EBD;
+}
+
 
 /* Color mosaic */
 .color-mosaic {
