@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1555,4 +1559,295 @@ a.service-card--link:hover h4 {
 .footer-bottom-inner p {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.35);
+}
+
+/* ── HAMBURGER BUTTON ── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #0d1b2a;
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.nav-hamburger[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-hamburger[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.nav-hamburger[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── MOBILE ≤767px ── */
+@media (max-width: 767px) {
+
+  .nav {
+    padding: 0 20px;
+  }
+
+  .nav-inner {
+    grid-template-columns: auto 1fr auto auto;
+    gap: 0 10px;
+  }
+
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px 0 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    z-index: 999;
+    gap: 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 13px 24px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f0f4f8;
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-products-pill {
+    border-radius: 0 !important;
+    padding: 13px 24px !important;
+    background: #eef6fc !important;
+    color: #0A6EBD !important;
+  }
+
+  .nav-products-pill.nav-active {
+    background: #e0f0fa !important;
+    color: #0A6EBD !important;
+  }
+
+  .btn-prepaid {
+    font-size: 0.72rem;
+    padding: 7px 10px;
+    white-space: nowrap;
+  }
+
+  .btn-prepaid .prepaid-chevron {
+    display: none;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 32px 20px 32px;
+  }
+
+  .hero-top {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .hero-heading h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-desc {
+    min-height: 0 !important;
+  }
+
+  .hero-desc p {
+    font-size: 0.95rem;
+  }
+
+  .hero-images {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-images .grey-box.tall {
+    min-height: 220px;
+  }
+
+  .hero-box-2 {
+    display: none;
+  }
+
+  /* SERVICES */
+  .services {
+    padding: 48px 20px;
+  }
+
+  .services-title {
+    font-size: 2rem;
+    margin-bottom: 36px;
+  }
+
+  .service-row {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    margin-bottom: 32px;
+  }
+
+  .color-mosaic {
+    display: none;
+  }
+
+  .service-cat-heading {
+    font-size: 2rem;
+  }
+
+  .service-cat-desc {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .services-inner .controlled-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTROLLED SYSTEMS */
+  .controlled {
+    padding: 48px 20px;
+  }
+
+  .controlled-heading {
+    font-size: 2rem;
+  }
+
+  .controlled-desc {
+    font-size: 0.95rem;
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .controlled-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .ctrl-card {
+    height: auto;
+  }
+
+  .ctrl-card--inverse {
+    flex-direction: column;
+  }
+
+  .ctrl-img-placeholder {
+    height: 200px;
+    width: 100%;
+  }
+
+  /* WHO WE ARE */
+  .who {
+    padding: 48px 20px;
+  }
+
+  .who-title {
+    font-size: 2rem;
+  }
+
+  .who-header {
+    margin-bottom: 0;
+  }
+
+  .who-grid-new {
+    display: none;
+  }
+
+  /* PARTNERS */
+  .partners {
+    padding: 48px 0;
+  }
+
+  .partners-header {
+    padding: 0 20px;
+    margin-bottom: 36px;
+  }
+
+  .partners-title {
+    font-size: 2rem;
+  }
+
+  .track-label {
+    padding: 0 20px;
+  }
+
+  /* CONTACT */
+  .contact {
+    padding: 48px 20px;
+  }
+
+  .contact-card {
+    grid-template-columns: 1fr;
+    padding: 28px 20px;
+    gap: 28px;
+    border-radius: 12px;
+  }
+
+  .contact-heading {
+    font-size: 2rem;
+  }
+
+  .contact-intro {
+    max-width: 100%;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 20px 32px;
+    gap: 32px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    padding: 18px 20px;
+  }
+
+  /* PREPAID MODAL */
+  .prepaid-modal-body {
+    max-height: calc(100svh - 160px);
+    overflow-y: auto;
+  }
+
 }

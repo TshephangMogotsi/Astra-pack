@@ -53,6 +53,11 @@
           </a>
         </div>
       </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
@@ -215,6 +220,13 @@ const PRODUCTS = {
       { val: 'IP68', lbl: 'Fully submersible' },
     ],
     tags: ['20-digit token top-up', 'Emergency credit (code 611)', 'Auto valve on empty', 'Anti-tamper magnetic defence', 'Sand and particle resistant', 'Install in any position', 'Prepaid / postpaid switchable'],
+    images: [
+      'images/Products/STS_prepaid_meter/STS prepaid_resident_water_meter_01.png',
+      'images/Products/STS_prepaid_meter/STS prepaid_resident_water_meter_02.png',
+      'images/Products/STS_prepaid_meter/STS prepaid_resident_water_meter_03.png',
+      'images/Products/STS_prepaid_meter/STS prepaid_resident_water_meter_04.png',
+      'images/Products/STS_prepaid_meter/STS prepaid_resident_water_meter_05.png',
+    ],
     specs: [
       ['Standard', 'ISO4064 / EN14154'],
       ['Prepaid standard', 'International STS1 / STS2'],
@@ -272,6 +284,13 @@ const PRODUCTS = {
       { val: 'Δp16', lbl: 'Low pressure loss' },
     ],
     tags: ['No moving parts', 'Bi-directional flow', 'Leakage detection', 'Dry pipe detection', 'IoT ready', 'Anti-fog display'],
+    images: [
+      'images/Products/district_meter/district_meter_01.png',
+      'images/Products/district_meter/district_meter_02.png',
+      'images/Products/district_meter/district_meter_03.png',
+      'images/Products/district_meter/district_meter_04.png',
+      'images/Products/district_meter/district_meter_05.png',
+    ],
     specs: [
       ['Standard', 'ISO4064 / EN14154'],
       ['Available sizes', 'DN32, DN40'],
@@ -323,6 +342,14 @@ const PRODUCTS = {
       { val: 'DN50–600', lbl: 'Size range' },
     ],
     tags: ['No moving parts', 'Bi-directional flow', 'Leakage detection', 'Dry pipe detection', 'Anti-fog display', 'Pressure monitoring (optional)', 'IoT ready'],
+    images: [
+      'images/Products/bulk_ultrasonic/bulk_ultraonic_01.png',
+      'images/Products/bulk_ultrasonic/bulk_ultrasonic_02.png',
+      'images/Products/bulk_ultrasonic/bulk_ultrasonic_03.png',
+      'images/Products/bulk_ultrasonic/bulk_ultrasonic_04.png',
+      'images/Products/bulk_ultrasonic/bulk_ultrasonic_05.png',
+      'images/Products/bulk_ultrasonic/bulk_ultrasonic_06.png',
+    ],
     specs: [
       ['Standard', 'ISO4064 / EN14154'],
       ['Available sizes', 'DN50 – DN600'],
@@ -376,6 +403,14 @@ const PRODUCTS = {
       { val: '≤10 kPa', lbl: 'Low pressure loss' },
     ],
     tags: ['Remote valve control', 'Burst pipe detection', 'Leakage detection', 'Prepaid / postpaid switchable', 'Anti-fog display', 'Replaceable comms module', 'CIU compatible (optional)'],
+    images: [
+      'images/Products/bulk_meter/Bulk_meter_valve_01.png',
+      'images/Products/bulk_meter/bulk_meter_valve_02.png',
+      'images/Products/bulk_meter/bulk_meter_valve_03.png',
+      'images/Products/bulk_meter/bulk_meter_valve_04.png',
+      'images/Products/bulk_meter/bulk_meter_valve_05.png',
+      'images/Products/bulk_meter/bulk_meter_valve_06.png',
+    ],
     specs: [
       ['Standard', 'ISO4064 / EN14154'],
       ['Available sizes', 'DN50 – DN200'],
@@ -421,6 +456,11 @@ const PRODUCTS = {
       { val: 'USB-C', lbl: 'Or battery powered' },
     ],
     tags: ['Large LCD display', 'Green / red credit indicator', 'Works without mains power', 'Optional backlight', '20-digit token entry', 'Emergency credit shortcode'],
+    images: [
+      'images/Products/CIU/CIU_01.png',
+      'images/Products/CIU/CIU_02.png',
+      'images/Products/CIU/CIU_03.png',
+    ],
     specs: [
       ['Power supply', 'Type-C / Battery'],
       ['Working voltage', '5 V, 0.5 A'],
@@ -536,6 +576,28 @@ if (!p) {
   document.getElementById('pd-model').textContent = p.model;
   document.getElementById('pd-desc').textContent = p.desc;
 
+  // Images
+  const imgs = p.images || [];
+  const mainEl = document.getElementById('pd-img-main');
+  if (imgs.length) {
+    mainEl.style.backgroundImage = 'url("' + imgs[0] + '")';
+    mainEl.style.backgroundSize = 'contain';
+    mainEl.style.backgroundPosition = 'center';
+    mainEl.style.backgroundRepeat = 'no-repeat';
+    mainEl.style.backgroundColor = '#fff';
+  }
+  document.querySelectorAll('.pd-thumb').forEach((thumb, i) => {
+    if (imgs[i]) {
+      thumb.style.backgroundImage = 'url("' + imgs[i] + '")';
+      thumb.style.backgroundSize = 'cover';
+      thumb.style.backgroundPosition = 'center';
+      thumb.style.backgroundRepeat = 'no-repeat';
+      thumb.style.display = '';
+    } else {
+      thumb.style.display = 'none';
+    }
+  });
+
   const hlContainer = document.getElementById('pd-highlights');
   p.highlights.forEach(h => {
     const div = document.createElement('div');
@@ -592,10 +654,15 @@ if (!p) {
 }
 
 // Thumbnail cycling
-document.querySelectorAll('.pd-thumb').forEach(thumb => {
+document.querySelectorAll('.pd-thumb').forEach((thumb, i) => {
   thumb.addEventListener('click', () => {
     document.querySelectorAll('.pd-thumb').forEach(t => t.classList.remove('pd-thumb--active'));
     thumb.classList.add('pd-thumb--active');
+    const imgs = (PRODUCTS[new URLSearchParams(location.search).get('id')] || {}).images || [];
+    if (imgs[i]) {
+      const mainEl = document.getElementById('pd-img-main');
+      mainEl.style.backgroundImage = 'url("' + imgs[i] + '")';
+    }
   });
 });
 
@@ -610,6 +677,32 @@ prepaidBtn.addEventListener('click', (e) => {
 document.addEventListener('click', () => {
   prepaidMenu.classList.remove('open');
   prepaidBtn.setAttribute('aria-expanded', false);
+});
+
+// Hamburger menu
+const navHamburger = document.getElementById('navHamburger');
+const navLinks = document.querySelector('.nav-links');
+
+navHamburger.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const open = navLinks.classList.toggle('open');
+  navHamburger.setAttribute('aria-expanded', open);
+});
+
+document.addEventListener('click', (e) => {
+  if (navLinks.classList.contains('open') &&
+      !navLinks.contains(e.target) &&
+      e.target !== navHamburger) {
+    navLinks.classList.remove('open');
+    navHamburger.setAttribute('aria-expanded', false);
+  }
+});
+
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navHamburger.setAttribute('aria-expanded', false);
+  });
 });
 </script>
 
