@@ -22,10 +22,10 @@
       </div>
       <nav class="nav-links">
         <a href="index.html#services">Services</a>
-        <a href="products.html" class="nav-active">Products</a>
         <a href="index.html#partners">Partners</a>
         <a href="index.html#about">About Us</a>
         <a href="index.html#contact">Contact Us</a>
+        <a href="products.html" class="nav-products-pill nav-active">Products</a>
       </nav>
       <div class="prepaid-dropdown">
         <button class="btn-prepaid" id="prepaidBtn" aria-expanded="false">
@@ -59,280 +59,92 @@
   <!-- PAGE HERO -->
   <section class="prod-hero">
     <div class="prod-hero-inner">
-      <p class="prod-hero-label">Smart Metering</p>
-      <h1 class="prod-hero-title">Our Products</h1>
-      <p class="prod-hero-sub">Pre-paid and post-paid metering solutions engineered for residential, commercial, and industrial environments across Botswana.</p>
+      <p class="prod-hero-label">ZLINK · Hexing</p>
+      <h1 class="prod-hero-title">Smart Water Meters</h1>
+      <p class="prod-hero-sub">High-accuracy ultrasonic metering solutions for residential, district, and bulk applications — built for smart city infrastructure.</p>
     </div>
   </section>
 
-  <!-- TABS -->
+  <!-- PRODUCTS GRID -->
   <section class="prod-section">
     <div class="prod-inner">
 
-      <div class="prod-tabs" role="tablist">
-        <button class="prod-tab" id="tab-all" role="tab" aria-selected="true" aria-controls="panel-all">
-          All Products
-        </button>
-        <button class="prod-tab" id="tab-electricity" role="tab" aria-selected="false" aria-controls="panel-electricity">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          Electrical Smart Meters
-        </button>
-        <button class="prod-tab" id="tab-water" role="tab" aria-selected="false" aria-controls="panel-water">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-          Smart Water Meters
-        </button>
+      <div class="prod-grid">
+
+        <a href="product.html?id=residential-prepaid" class="prod-card">
+          <div class="prod-card-img"></div>
+          <div class="prod-card-body">
+            <span class="prod-badge">Residential</span>
+            <span class="prod-type prod-type--water">Water</span>
+            <h3>Prepaid Residential Ultrasonic Smart Water Meter</h3>
+            <p>STS-compliant household meter with 20-digit token top-up, emergency credit, and over 8 years of battery life. Sand-resistant and tamper-proof.</p>
+            <span class="prod-card-link">View details &rarr;</span>
+          </div>
+        </a>
+
+        <a href="product.html?id=district-meter" class="prod-card">
+          <div class="prod-card-img"></div>
+          <div class="prod-card-body">
+            <span class="prod-badge prod-badge--commercial">District</span>
+            <span class="prod-type prod-type--water">Water</span>
+            <h3>District Ultrasonic Water Meter</h3>
+            <p>Installed at the inlet of apartment blocks to measure total building consumption. Solid brass, no moving parts, R500 dynamic range, fully submersible.</p>
+            <span class="prod-card-link">View details &rarr;</span>
+          </div>
+        </a>
+
+        <a href="product.html?id=bulk-smart" class="prod-card">
+          <div class="prod-card-img"></div>
+          <div class="prod-card-body">
+            <span class="prod-badge prod-badge--industrial">Bulk</span>
+            <span class="prod-type prod-type--water">Water</span>
+            <h3>Bulk Ultrasonic Smart Water Meter</h3>
+            <p>For major metering points in water supply networks — from municipal mains to industrial parks. DN50 to DN600 with IoT connectivity.</p>
+            <span class="prod-card-link">View details &rarr;</span>
+          </div>
+        </a>
+
+        <a href="product.html?id=bulk-prepaid" class="prod-card">
+          <div class="prod-card-img"></div>
+          <div class="prod-card-body">
+            <span class="prod-badge prod-badge--commercial">Prepaid</span>
+            <span class="prod-type prod-type--water">Water</span>
+            <h3>Bulk Prepayment Ultrasonic Water Meter</h3>
+            <p>All the features of the standard bulk meter plus remote valve control and built-in pressure sensing for burst pipe detection. DN50 to DN200.</p>
+            <span class="prod-card-link">View details &rarr;</span>
+          </div>
+        </a>
+
+        <a href="product.html?id=ciu-ev900" class="prod-card">
+          <div class="prod-card-img"></div>
+          <div class="prod-card-body">
+            <span class="prod-badge">Accessory</span>
+            <span class="prod-type prod-type--water">Water</span>
+            <h3>Customer Interface Unit</h3>
+            <p>In-home handheld display for token entry, balance checks, and emergency credit activation. Wireless RF link to the meter at 433 MHz.</p>
+            <span class="prod-card-link">View details &rarr;</span>
+          </div>
+        </a>
+
+        <a href="product.html?id=dcu-hxec300" class="prod-card">
+          <div class="prod-card-img"></div>
+          <div class="prod-card-body">
+            <span class="prod-badge prod-badge--industrial">Infrastructure</span>
+            <span class="prod-type prod-type--water">Water</span>
+            <h3>Data Concentrator Unit</h3>
+            <p>Outdoor network hub that collects readings from all meters wirelessly and forwards data to the management system over 4G. IP65-rated for harsh environments.</p>
+            <span class="prod-card-link">View details &rarr;</span>
+          </div>
+        </a>
+
       </div>
 
-      <!-- ALL PRODUCTS PANEL -->
-      <div class="prod-panel" id="panel-all" role="tabpanel" aria-labelledby="tab-all">
-        <div class="prod-grid">
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/meter blue.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge">Residential</span>
-              <span class="prod-type prod-type--elec">Electrical</span>
-              <h3>Single Phase Prepaid Meter</h3>
-              <p>Compact, tamper-resistant single phase meter for household installations with STS-compliant prepaid tokens.</p>
-            </div>
-          </div>
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/meter.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge prod-badge--commercial">Commercial</span>
-              <span class="prod-type prod-type--elec">Electrical</span>
-              <h3>Three Phase Prepaid Meter</h3>
-              <p>High-capacity three phase meter for offices and multi-tenant buildings with sub-metering support.</p>
-            </div>
-          </div>
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/Meter remote.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge prod-badge--industrial">Industrial</span>
-              <span class="prod-type prod-type--elec">Electrical</span>
-              <h3>AMI Smart Meter</h3>
-              <p>Advanced Metering Infrastructure with two-way communication, real-time data, and remote load control.</p>
-            </div>
-          </div>
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/meter blue.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge">Residential</span>
-              <span class="prod-type prod-type--elec">Electrical</span>
-              <h3>DIN Rail Prepaid Meter</h3>
-              <p>Space-saving DIN rail mount meter for distribution boards and compact panel installations.</p>
-            </div>
-          </div>
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/meter.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge">Residential</span>
-              <span class="prod-type prod-type--water">Water</span>
-              <h3>Residential Prepaid Water Meter</h3>
-              <p>STS-compliant prepaid water meter for household connections with keypad token entry.</p>
-            </div>
-          </div>
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/meter blue.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge prod-badge--commercial">Commercial</span>
-              <span class="prod-type prod-type--water">Water</span>
-              <h3>Bulk Prepaid Water Meter</h3>
-              <p>High-flow bulk meter for commercial properties with sub-metering and automated reporting.</p>
-            </div>
-          </div>
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/Meter remote.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge prod-badge--industrial">Industrial</span>
-              <span class="prod-type prod-type--water">Water</span>
-              <h3>AMR Smart Water Meter</h3>
-              <p>Automated Meter Reading with remote data collection, leak detection, and management platform integration.</p>
-            </div>
-          </div>
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/meter.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge prod-badge--industrial">Industrial</span>
-              <span class="prod-type prod-type--water">Water</span>
-              <h3>Industrial Flow Meter</h3>
-              <p>Heavy-duty electromagnetic flow meter for factories and large municipal reticulation networks.</p>
-            </div>
-          </div>
+      <div class="prod-cta-banner">
+        <div>
+          <p class="prod-cta-banner-title">Need a custom water metering solution?</p>
+          <p class="prod-cta-banner-sub">We design and deploy end-to-end metering infrastructure for utilities and developers.</p>
         </div>
-
-        <div class="prod-cta-banner">
-          <div>
-            <p class="prod-cta-banner-title">Not sure which meter fits your site?</p>
-            <p class="prod-cta-banner-sub">Our team will assess your requirements and recommend the right solution.</p>
-          </div>
-          <a href="index.html#contact" class="prod-cta-banner-btn">Talk to an Expert</a>
-        </div>
-      </div>
-
-      <!-- ELECTRICITY PANEL -->
-      <div class="prod-panel" id="panel-electricity" role="tabpanel" aria-labelledby="tab-electricity" hidden>
-        <div class="prod-grid">
-
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/meter blue.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge">Residential</span>
-              <span class="prod-type prod-type--elec">Electrical</span>
-              <h3>Single Phase Prepaid Meter</h3>
-              <p>Compact, tamper-resistant single phase meter for household installations. Supports STS-compliant prepaid tokens and integrates with all major mobile top-up platforms.</p>
-              <div class="prod-specs">
-                <span>STS Compliant</span>
-                <span>Tamper Alert</span>
-                <span>Remote Disconnect</span>
-                <span>LCD Display</span>
-              </div>
-              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
-            </div>
-          </div>
-
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/meter.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge prod-badge--commercial">Commercial</span>
-              <span class="prod-type prod-type--elec">Electrical</span>
-              <h3>Three Phase Prepaid Meter</h3>
-              <p>High-capacity three phase meter for offices, retail units, and multi-tenant buildings. Supports split billing and sub-metering for accurate tenant cost allocation.</p>
-              <div class="prod-specs">
-                <span>3-Phase</span>
-                <span>Sub-metering</span>
-                <span>Data Logging</span>
-                <span>Modbus/RS485</span>
-              </div>
-              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
-            </div>
-          </div>
-
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/Meter remote.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge prod-badge--industrial">Industrial</span>
-              <span class="prod-type prod-type--elec">Electrical</span>
-              <h3>AMI Smart Meter</h3>
-              <p>Advanced Metering Infrastructure meter with two-way communication. Delivers real-time consumption data, demand management, and remote load control for large-scale sites.</p>
-              <div class="prod-specs">
-                <span>AMI/AMR</span>
-                <span>GPRS/RF Comms</span>
-                <span>Demand Control</span>
-                <span>SCADA Ready</span>
-              </div>
-              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
-            </div>
-          </div>
-
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/meter blue.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge">Residential</span>
-              <span class="prod-type prod-type--elec">Electrical</span>
-              <h3>DIN Rail Prepaid Meter</h3>
-              <p>Space-saving DIN rail mount meter designed for distribution boards and compact panel installations. Ideal for sectional title and apartment complexes.</p>
-              <div class="prod-specs">
-                <span>DIN Mount</span>
-                <span>Prepaid</span>
-                <span>Compact</span>
-                <span>Plug &amp; Play</span>
-              </div>
-              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="prod-cta-banner">
-          <div>
-            <p class="prod-cta-banner-title">Not sure which meter fits your site?</p>
-            <p class="prod-cta-banner-sub">Our team will assess your requirements and recommend the right solution.</p>
-          </div>
-          <a href="index.html#contact" class="prod-cta-banner-btn">Talk to an Expert</a>
-        </div>
-      </div>
-
-      <!-- WATER PANEL -->
-      <div class="prod-panel" id="panel-water" role="tabpanel" aria-labelledby="tab-water" hidden>
-        <div class="prod-grid">
-
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/meter.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge">Residential</span>
-              <span class="prod-type prod-type--water">Water</span>
-              <h3>Residential Prepaid Water Meter</h3>
-              <p>STS-compliant prepaid water meter for household connections. Supports keypad token entry and integrates with mobile recharge platforms for easy top-ups.</p>
-              <div class="prod-specs">
-                <span>STS Compliant</span>
-                <span>Keypad Entry</span>
-                <span>Tamper Alert</span>
-                <span>LCD Display</span>
-              </div>
-              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
-            </div>
-          </div>
-
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/meter blue.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge prod-badge--commercial">Commercial</span>
-              <span class="prod-type prod-type--water">Water</span>
-              <h3>Bulk Prepaid Water Meter</h3>
-              <p>High-flow bulk meter for commercial properties and multi-unit developments. Enables accurate billing per tenant with full sub-metering capability and automated reporting.</p>
-              <div class="prod-specs">
-                <span>High Flow Rate</span>
-                <span>Sub-metering</span>
-                <span>Auto Reporting</span>
-                <span>Data Logging</span>
-              </div>
-              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
-            </div>
-          </div>
-
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/Meter remote.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge prod-badge--industrial">Industrial</span>
-              <span class="prod-type prod-type--water">Water</span>
-              <h3>AMR Smart Water Meter</h3>
-              <p>Automated Meter Reading water meter with remote data collection. Eliminates manual reading, detects leaks in real time, and feeds consumption data directly into your management platform.</p>
-              <div class="prod-specs">
-                <span>AMR/AMI</span>
-                <span>Leak Detection</span>
-                <span>GPRS Comms</span>
-                <span>SCADA Ready</span>
-              </div>
-              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
-            </div>
-          </div>
-
-          <div class="prod-card">
-            <div class="prod-card-img" style="background-image: url('images/meter.jpg');"></div>
-            <div class="prod-card-body">
-              <span class="prod-badge prod-badge--industrial">Industrial</span>
-              <span class="prod-type prod-type--water">Water</span>
-              <h3>Industrial Flow Meter</h3>
-              <p>Heavy-duty electromagnetic flow meter for factories, processing plants, and large municipal reticulation networks. Delivers precise volumetric measurement under high-pressure conditions.</p>
-              <div class="prod-specs">
-                <span>Electromagnetic</span>
-                <span>High Pressure</span>
-                <span>Pulse Output</span>
-                <span>IP68 Rated</span>
-              </div>
-              <a href="index.html#contact" class="prod-cta">Get a Quote</a>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="prod-cta-banner">
-          <div>
-            <p class="prod-cta-banner-title">Need a custom water metering solution?</p>
-            <p class="prod-cta-banner-sub">We design and deploy end-to-end metering infrastructure for utilities and developers.</p>
-          </div>
-          <a href="index.html#contact" class="prod-cta-banner-btn">Talk to an Expert</a>
-        </div>
+        <a href="index.html#contact" class="prod-cta-banner-btn">Talk to an Expert</a>
       </div>
 
     </div>

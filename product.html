@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Product — Astra-Pack Holdings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="products.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logos/Astra-Pack Holdings Logo.png" alt="Astra-Pack Holdings" class="logo-img" />
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#partners">Partners</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#contact">Contact Us</a>
+        <a href="products.html" class="nav-products-pill nav-active">Products</a>
+      </nav>
+      <div class="prepaid-dropdown">
+        <button class="btn-prepaid" id="prepaidBtn" aria-expanded="false">
+          Prepaid Recharge
+          <svg class="prepaid-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="prepaid-menu" id="prepaidMenu">
+          <a href="#" class="prepaid-option" data-type="electricity">
+            <span class="prepaid-icon prepaid-icon--elec">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </span>
+            <span class="prepaid-option-text">
+              <strong>Electricity</strong>
+              <span>Buy a prepaid electricity token</span>
+            </span>
+          </a>
+          <a href="#" class="prepaid-option" data-type="water">
+            <span class="prepaid-icon prepaid-icon--water">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </span>
+            <span class="prepaid-option-text">
+              <strong>Water</strong>
+              <span>Buy a prepaid water token</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB BAR -->
+  <div class="pd-bar">
+    <div class="pd-bar-inner">
+      <a href="products.html" class="pd-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="11 18 5 12 11 6"/></svg>
+        All Products
+      </a>
+      <p class="pd-breadcrumb-trail">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <a href="products.html">Products</a>
+        <span>›</span>
+        <span id="pd-bc-name">...</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- PRODUCT HERO -->
+  <section class="pd-hero">
+    <div class="pd-hero-inner">
+      <div class="pd-hero-layout">
+
+        <!-- LEFT: content + features -->
+        <div class="pd-hero-left">
+          <div class="pd-hero-top">
+            <p class="pd-hero-category" id="pd-category">WATER METERS</p>
+            <span class="pd-hero-badge" id="pd-badge">...</span>
+          </div>
+          <h1 class="pd-hero-title" id="pd-title">Loading...</h1>
+          <p class="pd-hero-model" id="pd-model">...</p>
+          <p class="pd-hero-desc" id="pd-desc">...</p>
+          <p class="pd-features-label">Key Features</p>
+          <div class="pd-features" id="pd-features"></div>
+        </div>
+
+        <!-- RIGHT: image gallery -->
+        <div class="pd-hero-right">
+          <div class="pd-img-main" id="pd-img-main"></div>
+          <div class="pd-img-thumbs">
+            <div class="pd-thumb pd-thumb--active" data-index="0"></div>
+            <div class="pd-thumb" data-index="1"></div>
+            <div class="pd-thumb" data-index="2"></div>
+            <div class="pd-thumb" data-index="3"></div>
+          </div>
+        </div>
+
+      </div>
+      <!-- HIGHLIGHTS STRIP -->
+      <div class="pd-highlights" id="pd-highlights"></div>
+    </div>
+  </section>
+
+  <!-- SPECS + TABLES -->
+  <section class="pd-body">
+    <div class="pd-body-inner">
+      <div class="pd-two-col">
+        <div>
+          <p class="pd-sec-label">Technical Specification</p>
+          <table class="pd-spec-table" id="pd-spec-table"></table>
+        </div>
+        <div id="pd-tables"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="pd-cta-section">
+    <div class="pd-cta-inner">
+      <div class="prod-cta-banner">
+        <div>
+          <p class="prod-cta-banner-title">Ready to deploy this solution?</p>
+          <p class="prod-cta-banner-sub">Our team can advise on sizing, installation, and integration for your site.</p>
+        </div>
+        <a href="index.html#contact" class="prod-cta-banner-btn">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="logos/Astra-Pack Holdings Logo.png" alt="Astra-Pack Holdings" class="footer-logo" />
+        <p class="footer-tagline">Intelligent systems for modern industry, delivering smart, connected solutions across Botswana.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/astra-pack-holdings/" target="_blank" class="social-link">
+            <img src="socials/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://www.facebook.com/astrapackholdings/" target="_blank" class="social-link">
+            <img src="socials/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/astrapackholdings/" target="_blank" class="social-link">
+            <img src="socials/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-title">Services</h5>
+        <ul>
+          <li><a href="index.html#services">Smart Metering</a></li>
+          <li><a href="index.html#services">Controlled Systems</a></li>
+          <li><a href="index.html#services">Home Automation</a></li>
+          <li><a href="index.html#services">Commercial Automation</a></li>
+          <li><a href="index.html#services">Industrial Automation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-title">Company</h5>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#partners">Clients &amp; Partners</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-title">Contact</h5>
+        <ul class="footer-contact-list">
+          <li>
+            <span class="footer-contact-label">Email</span>
+            <a href="mailto:info@astrapack.co.bw">info@astrapack.co.bw</a>
+          </li>
+          <li>
+            <span class="footer-contact-label">Phone</span>
+            <span>+267 78 483 511</span>
+          </li>
+          <li>
+            <span class="footer-contact-label">Address</span>
+            <span>Plot 20689, Unit 3 Block 3 Industrial, Gaborone</span>
+          </li>
+          <li>
+            <span class="footer-contact-label">Hours</span>
+            <span>Mon &ndash; Fri, 8AM &ndash; 5PM CAT</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2025 Astra-Pack Holdings (Pty) Ltd. All rights reserved.</p>
+        <p>Registered in Botswana &middot; Wholly citizen-owned</p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+const PRODUCTS = {
+  'residential-prepaid': {
+    title: 'Prepaid Residential Ultrasonic Smart Water Meter',
+    model: 'ZLINK · DN15 / DN20 / DN25',
+    category: 'Water Meters',
+    badge: 'STS Prepaid · Residential',
+    desc: 'The household water meter that puts customers in control. Buy water credit in advance, load it with a 20-digit token using the CIU keypad, and the meter manages the rest — including an emergency top-up feature if you run out unexpectedly. Sand-resistant, tamper-proof, and built to last over 8 years on a single battery.',
+    highlights: [
+      { val: 'STS', lbl: 'International prepaid standard' },
+      { val: '1 L/h', lbl: 'Starting flow (DN20)' },
+      { val: '8+ yrs', lbl: 'Battery life' },
+      { val: 'IP68', lbl: 'Fully submersible' },
+    ],
+    tags: ['20-digit token top-up', 'Emergency credit (code 611)', 'Auto valve on empty', 'Anti-tamper magnetic defence', 'Sand and particle resistant', 'Install in any position', 'Prepaid / postpaid switchable'],
+    specs: [
+      ['Standard', 'ISO4064 / EN14154'],
+      ['Prepaid standard', 'International STS1 / STS2'],
+      ['Available sizes', 'DN15, DN20, DN25'],
+      ['Dynamic range (R)', 'R500 / R400'],
+      ['Precision class', 'Class 2'],
+      ['Pressure loss', '25 kPa'],
+      ['Max working pressure', '1.6 MPa'],
+      ['Working temperature', '−25 °C to +55 °C, ≤100% RH'],
+      ['Liquid temp class', 'T30 / T50'],
+      ['Flow profile class', 'U0D0'],
+      ['EM environment class', 'E2'],
+      ['Protection class', 'IP68 (submersible)'],
+      ['Power supply', '3.6 V lithium, ≥10 years'],
+      ['Body material', 'PPO (plastic)'],
+      ['Volume resolution', '0.0001 – 99 999.9999 m³'],
+      ['Data storage', '14×24 hourly · 366 daily · 72 monthly'],
+      ['Communication', 'Pulse · 4-20 mA · RS485 · RF · M-Bus · NB-IoT'],
+    ],
+    tables: [
+      {
+        label: 'Flow rate performance',
+        headers: ['DN', 'R', 'Q4 (m³/h)', 'Q3 (m³/h)', 'Q2 (L/h)', 'Q1 (L/h)', 'Q0 (L/h)'],
+        rows: [
+          ['15', '400', '3.125', '2.5', '10', '6.25', '1'],
+          ['15', '500', '3.125', '2.5', '8', '5', '1'],
+          ['20', '400', '5', '4', '16', '10', '2'],
+          ['20', '500', '5', '4', '12.8', '8', '2'],
+          ['25', '400', '7.875', '6.3', '25.2', '15.75', '3'],
+          ['25', '500', '7.875', '6.3', '20.16', '12.6', '3'],
+        ]
+      },
+      {
+        label: 'Installation dimensions',
+        headers: ['DN', 'L (mm)', 'W (mm)', 'H (mm)', 'Weight'],
+        rows: [
+          ['15', '165', '80', '106.5', '900 g'],
+          ['20', '195', '80', '109', '1000 g'],
+          ['25', '260', '80', '112', '1100 g'],
+        ]
+      }
+    ]
+  },
+
+  'district-meter': {
+    title: 'District Ultrasonic Water Meter',
+    model: 'ZLINK DISTRICT · DN32 / DN40',
+    category: 'Water Meters',
+    badge: 'District / Aggregate',
+    desc: 'Installed at the inlet of apartment blocks and complexes to measure the total water entering the building. Solid brass body with no moving parts means zero maintenance and accurate readings for years — even in harsh outdoor conditions.',
+    highlights: [
+      { val: 'R500', lbl: 'Wide dynamic range' },
+      { val: '10 yrs', lbl: 'Battery life' },
+      { val: 'IP68', lbl: 'Fully submersible' },
+      { val: 'Δp16', lbl: 'Low pressure loss' },
+    ],
+    tags: ['No moving parts', 'Bi-directional flow', 'Leakage detection', 'Dry pipe detection', 'IoT ready', 'Anti-fog display'],
+    specs: [
+      ['Standard', 'ISO4064 / EN14154'],
+      ['Available sizes', 'DN32, DN40'],
+      ['Dynamic range (R)', 'R500'],
+      ['Precision class', 'Class 2'],
+      ['Pressure loss', 'Δp16'],
+      ['Max working pressure', '1.6 MPa'],
+      ['Working temperature', '−25 °C to +55 °C'],
+      ['Liquid temp class', 'T30 / T50'],
+      ['Flow profile class', 'U0D0'],
+      ['EM environment class', 'E2'],
+      ['Protection class', 'IP68 (submersible)'],
+      ['Power supply', '3.6 V lithium, ≥10 years'],
+      ['Construction', 'Solid brass, threaded connection'],
+      ['Volume resolution', '0.0001 – 999 999 999.99999 m³'],
+      ['Data storage', '14×24 hourly · 366 daily · 72 monthly'],
+      ['Communication', 'M-Bus · RS485 · Pulse · NB-IoT · 4-20 mA · GPRS'],
+    ],
+    tables: [
+      {
+        label: 'Flow rate performance',
+        headers: ['DN', 'Q4 (m³/h)', 'Q3 (m³/h)', 'Q2 (m³/h)', 'Q1 (m³/h)', 'Q0 (L/h)'],
+        rows: [
+          ['32', '31.25', '25', '0.08', '0.05', '3'],
+          ['40', '50', '40', '0.128', '0.08', '5'],
+        ]
+      },
+      {
+        label: 'Installation dimensions',
+        headers: ['DN', 'L (mm)', 'W (mm)', 'H (mm)', 'Thread', 'Weight'],
+        rows: [
+          ['32', '260', '157', '155', 'G1½B', '4.6 kg'],
+          ['40', '245 / 300', '157', '169', 'G2B', '7.2 kg'],
+        ]
+      }
+    ]
+  },
+
+  'bulk-smart': {
+    title: 'Bulk Ultrasonic Smart Water Meter',
+    model: 'ZLINK HXW310-E · DN50 (range: DN50–DN600)',
+    category: 'Water Meters',
+    badge: 'Bulk / Network',
+    desc: 'Designed for major metering points in water supply networks — from municipal mains to industrial parks and irrigation systems. Zero moving parts deliver stable, high-accuracy measurements over a decade without maintenance, even under the toughest field conditions.',
+    highlights: [
+      { val: '63 m³/h', lbl: 'Permanent flow (DN50)' },
+      { val: '10 yrs', lbl: 'Battery life' },
+      { val: 'IP68', lbl: 'Fully submersible' },
+      { val: 'DN50–600', lbl: 'Size range' },
+    ],
+    tags: ['No moving parts', 'Bi-directional flow', 'Leakage detection', 'Dry pipe detection', 'Anti-fog display', 'Pressure monitoring (optional)', 'IoT ready'],
+    specs: [
+      ['Standard', 'ISO4064 / EN14154'],
+      ['Available sizes', 'DN50 – DN600'],
+      ['Dynamic range (R)', 'R500'],
+      ['Precision class', 'Class 2'],
+      ['Pressure loss', 'Δp16'],
+      ['Max working pressure', '1.6 MPa'],
+      ['Working temperature', '−25 °C to +55 °C'],
+      ['Liquid temp class', 'T30 / T50'],
+      ['Flow profile class', 'U0D0'],
+      ['EM environment class', 'E2'],
+      ['Protection class', 'IP68 (submersible)'],
+      ['Power supply', '3.6 V lithium, ≥10 years'],
+      ['Construction', 'Cast iron (epoxy coated) or stainless steel · Flanged'],
+      ['Volume resolution', '0.0001 – 999 999 999.99999 m³'],
+      ['Data storage', '14×24 hourly · 366 daily · 72 monthly'],
+      ['Communication', 'M-Bus · RS485 · Pulse · NB-IoT · 4-20 mA · GPRS'],
+    ],
+    tables: [
+      {
+        label: 'DN50 flow rate performance',
+        headers: ['Parameter', 'Value'],
+        rows: [
+          ['Q4 – Overload flow', '78.75 m³/h'],
+          ['Q3 – Permanent flow', '63 m³/h'],
+          ['Q2 – Transitional flow', '0.2016 m³/h'],
+          ['Q1 – Minimum flow', '0.126 m³/h'],
+          ['Q0 – Starting flow', '7 L/h'],
+        ]
+      },
+      {
+        label: 'DN50 installation dimensions',
+        headers: ['L (mm)', 'H (mm)', 'D outer (mm)', 'K (mm)', 'Holes', 'Weight'],
+        rows: [
+          ['200 or 270', '253', '165', '125', '18×4', '11.2–13.2 kg'],
+        ]
+      }
+    ]
+  },
+
+  'bulk-prepaid': {
+    title: 'Bulk Prepayment Ultrasonic Water Meter',
+    model: 'ZLINK HXW310-P · DN50 (range: DN50–DN200)',
+    category: 'Water Meters',
+    badge: 'Prepaid + Remote Valve',
+    desc: 'Everything the standard bulk meter offers — plus the ability to remotely open or close the water supply without anyone visiting the site. Built-in pressure sensors detect leaks and pipe bursts automatically. Supports both prepaid and post-paid billing, ideal for commercial and industrial customers.',
+    highlights: [
+      { val: 'Remote', lbl: 'Valve ON / OFF control' },
+      { val: '10 yrs', lbl: 'Battery life' },
+      { val: 'IP68', lbl: 'Fully submersible' },
+      { val: '≤10 kPa', lbl: 'Low pressure loss' },
+    ],
+    tags: ['Remote valve control', 'Burst pipe detection', 'Leakage detection', 'Prepaid / postpaid switchable', 'Anti-fog display', 'Replaceable comms module', 'CIU compatible (optional)'],
+    specs: [
+      ['Standard', 'ISO4064 / EN14154'],
+      ['Available sizes', 'DN50 – DN200'],
+      ['Dynamic range (R)', 'R500'],
+      ['Precision class', 'Class 2'],
+      ['Pressure loss', '≤10 kPa'],
+      ['Max working pressure', '1.6 MPa'],
+      ['Protection class', 'IP68 (submersible)'],
+      ['Power supply', '3.6 V lithium, ≥10 years'],
+      ['Installation', 'Horizontal / Vertical / Inclined (U0D0)'],
+      ['Payment mode', 'Prepaid / postpaid switchable'],
+      ['Communication', 'RS485 · NB-IoT · LoRa · GPRS/3G/4G · Infrared'],
+    ],
+    tables: [
+      {
+        label: 'Smart features',
+        headers: ['Feature', 'Detail'],
+        rows: [
+          ['Valve control', 'Remote ON / OFF'],
+          ['Pressure detection', 'Internal — leakage and burst pipe'],
+          ['Dry pipe detection', 'Yes'],
+          ['Bi-directional flow', 'Yes — anti-tamper'],
+          ['Removable flange', 'Yes — easy field installation'],
+          ['Pressure sensor', 'Integrated (optional)'],
+          ['CIU support', 'Optional'],
+          ['Comms module', 'Replaceable in field'],
+          ['Display', 'Vacuumed electron cavity (anti-fog)'],
+        ]
+      }
+    ]
+  },
+
+  'ciu-ev900': {
+    title: 'Customer Interface Unit',
+    model: 'Hexing CIU EV900',
+    category: 'Accessories',
+    badge: 'Accessory · CIU',
+    desc: 'The simple handheld display that lives inside the home. It shows remaining water balance, lets users enter top-up tokens with the keypad, and alerts with a colour-coded light when the balance is running low. If credit runs out unexpectedly, pressing shortcode 611 unlocks an emergency water supply.',
+    highlights: [
+      { val: 'RF', lbl: 'Wireless to meter' },
+      { val: '433 MHz', lbl: 'Comms frequency' },
+      { val: '611', lbl: 'Emergency credit code' },
+      { val: 'USB-C', lbl: 'Or battery powered' },
+    ],
+    tags: ['Large LCD display', 'Green / red credit indicator', 'Works without mains power', 'Optional backlight', '20-digit token entry', 'Emergency credit shortcode'],
+    specs: [
+      ['Power supply', 'Type-C / Battery'],
+      ['Working voltage', '5 V, 0.5 A'],
+      ['Communication', 'RF 433 MHz'],
+      ['Dimensions', '130 × 67 × 25 mm'],
+      ['Display size', '50 × 25 mm (LCD)'],
+      ['Material', 'Plastic'],
+      ['Working temperature', '0 °C to +45 °C'],
+      ['Storage temperature', '−10 °C to +70 °C'],
+    ],
+    tables: [
+      {
+        label: 'Display & functions',
+        headers: ['Feature', 'Detail'],
+        rows: [
+          ['Volume display', '8-digit'],
+          ['Flow rate display', '4-digit'],
+          ['Credit indicator', 'Green (OK) · Red (low) · Flashing (critical)'],
+          ['Emergency credit', 'Shortcode 611'],
+          ['Token attempts / day', 'Up to 10'],
+          ['Balance queries / day', 'Up to 20'],
+          ['Display w/o power', 'Yes — RWP mode'],
+        ]
+      },
+      {
+        label: 'Shortcodes',
+        headers: ['Code', 'Function'],
+        rows: [
+          ['600', 'Check consumption'],
+          ['601', 'Check credit balance'],
+          ['604', 'Check meter number'],
+          ['611', 'Activate emergency credit'],
+          ['612', 'Cancel audible alarm'],
+          ['650', 'Open valve'],
+          ['655', 'Close valve'],
+        ]
+      }
+    ]
+  },
+
+  'dcu-hxec300': {
+    title: 'Data Concentrator Unit',
+    model: 'Hexing HXEC300 · Litiot',
+    category: 'Network Infrastructure',
+    badge: 'Network Infrastructure',
+    desc: 'The communication hub that ties your entire metering network together. Installed outdoors on a pole or wall, it collects readings from all your water meters wirelessly and forwards the data to a central management system over 4G — no manual meter reading required. Designed for the most demanding outdoor environments, with optional backup power to keep it running through outages.',
+    highlights: [
+      { val: '4G + LoRa', lbl: 'Dual-network comms' },
+      { val: 'IP65', lbl: 'Weatherproof outdoor' },
+      { val: '4 hrs', lbl: 'Backup power (optional)' },
+      { val: 'Linux', lbl: 'Industrial OS' },
+    ],
+    tags: ['Automatic meter reading', 'Remote firmware updates', 'Leak and alarm alerts', 'Pole or wall mount', 'End-to-end encryption', 'Smart city ready', 'Last-gasp outage alert'],
+    specs: [
+      ['Nominal voltage', '1-phase 2-wire AC, 85–450 VAC'],
+      ['Frequency', '50 / 60 Hz (range: 47–62 Hz)'],
+      ['Power consumption', '<10 W / <15 VA (idle)'],
+      ['Operating temperature', '−25 °C to +70 °C'],
+      ['Storage temperature', '−40 °C to +85 °C'],
+      ['Humidity', 'Up to 95%'],
+      ['Protection degree', 'IP65 (waterproof, dustproof)'],
+      ['RAM', 'DDR2 64 MB'],
+      ['Flash storage', 'NAND 256 MB'],
+      ['Backup battery', '4 hrs at −10 °C to +60 °C (optional)'],
+      ['Housing material', 'Polycarbonate + GF + anti-UV'],
+      ['Dimensions', '284 × 263 × 99 mm (L×W×H)'],
+      ['Weight', 'Approx. 2.3 kg'],
+      ['RTC accuracy', '≤ ±0.5 s / day'],
+      ['Standards', 'IEC 61000-4-2 · IEC 61000-4-3 · IEC 61000-4-4'],
+    ],
+    tables: [
+      {
+        label: 'Communication interfaces',
+        headers: ['Interface', 'Detail'],
+        rows: [
+          ['Up-link', 'Ethernet RJ45 (10/100M) or 3G/4G'],
+          ['Down-link', 'LoRa (ISM 433.05–434.79 MHz)'],
+          ['Local maintenance', 'Wi-Fi (802.11b/g/n) + USB'],
+          ['LoRa transmit power', '>10 dBm'],
+          ['LoRa sensitivity', '−128 dBm'],
+          ['Antenna gain', '2.5 dBi'],
+        ]
+      },
+      {
+        label: 'Key software capabilities',
+        headers: ['Feature', 'Detail'],
+        rows: [
+          ['Data collection', 'Real-time, daily, and monthly billing reads'],
+          ['Alarms', 'Event collection, self-diagnosis, active alerts'],
+          ['Maintenance', 'Remote firmware upgrade (OTA) via MDC system'],
+          ['Power failure', 'Last-gasp alert to master station'],
+          ['Security', 'Full end-to-end data encryption'],
+          ['Access', 'MDC system · Web interface'],
+        ]
+      }
+    ]
+  }
+};
+
+// Render the page
+const params = new URLSearchParams(location.search);
+const id = params.get('id');
+const p = PRODUCTS[id];
+
+if (!p) {
+  location.href = 'products.html';
+} else {
+  document.getElementById('page-title').textContent = p.title + ' — Astra-Pack Holdings';
+  document.getElementById('pd-bc-name').textContent = p.title;
+  document.getElementById('pd-category').textContent = p.category.toUpperCase();
+  document.getElementById('pd-badge').textContent = p.badge;
+  document.getElementById('pd-title').textContent = p.title;
+  document.getElementById('pd-model').textContent = p.model;
+  document.getElementById('pd-desc').textContent = p.desc;
+
+  const hlContainer = document.getElementById('pd-highlights');
+  p.highlights.forEach(h => {
+    const div = document.createElement('div');
+    div.className = 'pd-hl';
+    div.innerHTML = '<div class="pd-hl-val">' + h.val + '</div><div class="pd-hl-lbl">' + h.lbl + '</div>';
+    hlContainer.appendChild(div);
+  });
+
+  const featuresContainer = document.getElementById('pd-features');
+  p.tags.forEach(t => {
+    const div = document.createElement('div');
+    div.className = 'pd-feature';
+    div.innerHTML = '<span class="pd-feature-dot"></span>' + t;
+    featuresContainer.appendChild(div);
+  });
+
+  const specTable = document.getElementById('pd-spec-table');
+  p.specs.forEach(([label, value]) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td>' + label + '</td><td>' + value + '</td>';
+    specTable.appendChild(tr);
+  });
+
+  const tablesContainer = document.getElementById('pd-tables');
+  p.tables.forEach(t => {
+    const labelEl = document.createElement('p');
+    labelEl.className = 'pd-sec-label';
+    labelEl.textContent = t.label;
+    tablesContainer.appendChild(labelEl);
+
+    const table = document.createElement('table');
+    table.className = 'pd-perf-table';
+
+    const thead = document.createElement('tr');
+    t.headers.forEach(h => {
+      const th = document.createElement('th');
+      th.textContent = h;
+      thead.appendChild(th);
+    });
+    table.appendChild(thead);
+
+    t.rows.forEach(row => {
+      const tr = document.createElement('tr');
+      row.forEach(cell => {
+        const td = document.createElement('td');
+        td.textContent = cell;
+        tr.appendChild(td);
+      });
+      table.appendChild(tr);
+    });
+
+    tablesContainer.appendChild(table);
+  });
+}
+
+// Thumbnail cycling
+document.querySelectorAll('.pd-thumb').forEach(thumb => {
+  thumb.addEventListener('click', () => {
+    document.querySelectorAll('.pd-thumb').forEach(t => t.classList.remove('pd-thumb--active'));
+    thumb.classList.add('pd-thumb--active');
+  });
+});
+
+// Prepaid dropdown
+const prepaidBtn = document.getElementById('prepaidBtn');
+const prepaidMenu = document.getElementById('prepaidMenu');
+prepaidBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const open = prepaidMenu.classList.toggle('open');
+  prepaidBtn.setAttribute('aria-expanded', open);
+});
+document.addEventListener('click', () => {
+  prepaidMenu.classList.remove('open');
+  prepaidBtn.setAttribute('aria-expanded', false);
+});
+</script>
+
+</body>
+</html>

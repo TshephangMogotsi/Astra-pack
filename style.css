@@ -38,6 +38,11 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+.logo a {
+  display: block;
+  line-height: 0;
+}
+
 .logo-img {
   height: 40px;
   width: auto;
@@ -47,6 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   gap: 40px;
   justify-content: center;
+  align-items: center;
 }
 
 .prepaid-dropdown {
@@ -159,6 +165,30 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-links a:hover {
   color: #1a3a6b;
+}
+
+.nav-products-pill {
+  background: #deedf8;
+  color: #0A6EBD !important;
+  border-radius: 20px;
+  padding: 6px 16px !important;
+  font-weight: 700 !important;
+  transition: background 0.2s !important;
+}
+
+.nav-products-pill:hover {
+  background: #c8dff3 !important;
+  color: #0A6EBD !important;
+}
+
+.nav-products-pill.nav-active {
+  background: #0A6EBD !important;
+  color: #fff !important;
+}
+
+.nav-products-pill.nav-active:hover {
+  background: #085a9a !important;
+  color: #fff !important;
 }
 
 /* ── HERO ── */
