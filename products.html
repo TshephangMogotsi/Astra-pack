@@ -74,6 +74,12 @@
   <section class="prod-section">
     <div class="prod-inner">
 
+      <div class="prod-tabs" role="tablist">
+        <button class="prod-tab" role="tab" aria-selected="true" data-filter="all">All Products</button>
+        <button class="prod-tab" role="tab" aria-selected="false" data-filter="elec">Electricity Meters</button>
+        <button class="prod-tab" role="tab" aria-selected="false" data-filter="water">Water Meters</button>
+      </div>
+
       <div class="prod-grid">
 
         <a href="product.html?id=residential-prepaid" class="prod-card">
@@ -266,5 +272,26 @@
   </footer>
 
   <script src="products.js"></script>
+  <script>
+    const tabs = document.querySelectorAll('.prod-tab');
+    const cards = document.querySelectorAll('.prod-card');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.setAttribute('aria-selected', 'false'));
+        tab.setAttribute('aria-selected', 'true');
+
+        const filter = tab.dataset.filter;
+        cards.forEach(card => {
+          const isWater = card.querySelector('.prod-type--water');
+          const isElec  = card.querySelector('.prod-type--elec');
+          const show = filter === 'all'
+            || (filter === 'water' && isWater)
+            || (filter === 'elec'  && isElec);
+          card.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
