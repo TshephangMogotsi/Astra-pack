@@ -501,6 +501,185 @@ const PRODUCTS = {
     ]
   },
 
+  'elec-prepaid-single': {
+    title: 'Single Phase Prepaid Electricity Meter',
+    model: 'Hexing · DDSY1088',
+    category: 'Electricity Meters',
+    badge: 'STS Prepaid · Single Phase',
+    desc: 'Put residents in full control of their electricity spend with the DDSY1088. Fully STS-compliant, this single-phase prepaid meter accepts a 20-digit token via its integrated keypad and manages credit, load limiting, and tamper detection automatically. Designed for residential prepayment deployments where accurate, transparent billing and utility-grade reliability are non-negotiable.',
+    highlights: [
+      { val: 'Class 1', lbl: 'Accuracy (IEC 62053-21)' },
+      { val: 'STS', lbl: 'Prepaid standard compliant' },
+      { val: '5(60)A', lbl: 'Current range' },
+      { val: 'IP54', lbl: 'Weatherproof enclosure' },
+    ],
+    tags: ['STS-compliant 20-digit token entry', 'Integrated keypad', 'Tamper detection & event logging', 'Configurable load limiting', 'Load shedding support', 'Real-time credit on LCD', 'NB-IoT / RF / PLC communication', 'DIN rail or wall mount'],
+    images: [
+      'images/Products/electrical_meter/DDSY1088 Single Phase.png',
+    ],
+    specs: [
+      ['Standards', 'IEC 62052-11 · IEC 62053-21 · IEC 62055-31'],
+      ['Prepaid standard', 'IEC 62055-31 / IEC 62055-41 (STS)'],
+      ['Voltage', '230 V AC (±20%)'],
+      ['Current range', '5(60) A'],
+      ['Accuracy class', 'Class 1'],
+      ['Frequency', '50 Hz / 60 Hz'],
+      ['Display', 'LCD with backlight'],
+      ['Communication', 'NB-IoT / RF / PLC (optional)'],
+      ['Installation', 'DIN rail or wall mount'],
+      ['Enclosure rating', 'IP54'],
+      ['Operating temperature', '−25 °C to +55 °C'],
+    ],
+    tables: [
+      {
+        label: 'Metering functions',
+        headers: ['Function', 'Detail'],
+        rows: [
+          ['Energy measurement', 'Active energy (kWh)'],
+          ['Token entry', '20-digit STS token via keypad'],
+          ['Credit display', 'Real-time remaining balance on LCD'],
+          ['Load limiting', 'Configurable threshold'],
+          ['Load shedding', 'Supported'],
+          ['Tamper detection', 'Yes — with event logging'],
+          ['Communication options', 'NB-IoT / RF / PLC (optional)'],
+        ]
+      }
+    ]
+  },
+
+  'elec-postpaid-single': {
+    title: 'Single Phase Postpaid Electricity Meter',
+    model: 'Hexing · DDS1088',
+    category: 'Electricity Meters',
+    badge: 'Postpaid · Single Phase',
+    desc: 'A high-accuracy single-phase postpaid energy meter engineered for reliable residential and light commercial metering. The DDS1088 supports multi-tariff billing, bi-directional energy measurement, and real-time demand tracking — making it equally at home on a domestic supply or a small commercial connection. With a design lifespan exceeding 15 years and optical plus RS485 communication, it integrates cleanly into any AMI or billing platform.',
+    highlights: [
+      { val: 'Class 1', lbl: 'Accuracy (IEC 62053-21)' },
+      { val: '4-tariff', lbl: 'Multi-tariff billing' },
+      { val: '15+ yrs', lbl: 'Design lifespan' },
+      { val: '5(80)A', lbl: 'Current range' },
+    ],
+    tags: ['Multi-tariff billing (up to 4)', 'Bi-directional energy measurement', 'Real-time demand tracking', 'Event logging with time-stamp', 'Magnetic tamper detection', 'RS485 + optical port', '8-digit LCD display', '>15 year design lifespan'],
+    images: [
+      'images/Products/electrical_meter/DDS1088 Single Phase Postpaid.png',
+    ],
+    specs: [
+      ['Standards', 'IEC 62052-11 · IEC 62053-21'],
+      ['Voltage', '230 V AC (±20%)'],
+      ['Current range', '5(80) A'],
+      ['Accuracy class', 'Class 1'],
+      ['Frequency', '50 Hz / 60 Hz'],
+      ['Display', 'LCD, 8-digit'],
+      ['Communication', 'RS485 / Optical port'],
+      ['Enclosure rating', 'IP54'],
+      ['Operating temperature', '−25 °C to +55 °C'],
+      ['Design lifespan', '>15 years'],
+    ],
+    tables: [
+      {
+        label: 'Metering & billing features',
+        headers: ['Feature', 'Detail'],
+        rows: [
+          ['Tariff support', 'Up to 4 tariffs'],
+          ['Energy measurement', 'Bi-directional (import + export)'],
+          ['Demand measurement', 'Real-time'],
+          ['Event logging', 'Yes — with time-stamp'],
+          ['Tamper detection', 'Magnetic'],
+          ['Communication', 'RS485 + optical port'],
+        ]
+      }
+    ]
+  },
+
+  'elec-ct-three-phase': {
+    title: 'Three Phase CT-Connected Smart Electricity Meter',
+    model: 'Hexing · DTSD1088',
+    category: 'Electricity Meters',
+    badge: 'Commercial · CT-Connected',
+    desc: 'Engineered for high-current commercial and industrial installations where direct connection is not practical, the DTSD1088 delivers Class 0.5S accuracy across all four measurement quadrants. Beyond energy metering, it performs continuous power quality analysis — capturing THD, voltage disturbances, and maximum demand — and stores up to 12 configurable load profile channels for detailed consumption analytics. Dual RS485 and Ethernet ports make integration into any AMI or building energy management system straightforward.',
+    highlights: [
+      { val: 'Class 0.5S', lbl: 'Accuracy (IEC 62053-22)' },
+      { val: '4-quadrant', lbl: 'Energy measurement' },
+      { val: '12 channels', lbl: 'Load profile recording' },
+      { val: '3×230/400V', lbl: 'Three phase supply' },
+    ],
+    tags: ['CT-connected for high-current sites', 'Four-quadrant energy measurement', 'Power quality monitoring (THD)', 'Voltage disturbance detection', 'Maximum demand tracking with reset', 'Multi-tariff & time-of-use billing', 'Up to 12 load profile channels', 'RS485 + Ethernet + NB-IoT'],
+    images: [
+      'images/Products/electrical_meter/DTSD1088 Three Phase CT.png',
+    ],
+    specs: [
+      ['Standards', 'IEC 62052-11 · IEC 62053-22 · IEC 62053-23'],
+      ['Voltage', '3×230/400 V AC'],
+      ['Current range', '1.5(6) A via CT'],
+      ['Accuracy class', 'Class 0.5S'],
+      ['Frequency', '50 Hz / 60 Hz'],
+      ['Load profile channels', 'Up to 12'],
+      ['Display', 'LCD with backlight, multi-page'],
+      ['Communication', 'RS485 / Ethernet / NB-IoT'],
+      ['Connection type', 'CT-connected (indirect)'],
+      ['Enclosure rating', 'IP54'],
+    ],
+    tables: [
+      {
+        label: 'Measurement & power quality',
+        headers: ['Parameter', 'Detail'],
+        rows: [
+          ['Measurement quadrants', '4 (active + reactive, import + export)'],
+          ['Power quality', 'THD, voltage disturbances'],
+          ['Maximum demand', 'Tracking with manual reset'],
+          ['Load profile', 'Up to 12 configurable channels'],
+          ['Tariff options', 'Multi-tariff, time-of-use'],
+          ['Communication ports', 'RS485, Ethernet, NB-IoT'],
+        ]
+      }
+    ]
+  },
+
+  'elec-direct-three-phase': {
+    title: 'Three Phase Direct-Connect Smart Electricity Meter',
+    model: 'Hexing · DTSD1088-D',
+    category: 'Electricity Meters',
+    badge: 'Commercial · Direct Connect',
+    desc: 'The DTSD1088-D is a direct-connected three-phase smart meter purpose-built for small commercial and light industrial premises. Rated to 100 A and supporting up to 8 separate tariffs, it gives utilities and site operators granular control over energy billing. Its modular communication interface accepts RS485, PLC, or NB-IoT, and an optional DIN rail mount keeps panel integration clean. A practical, AMI-ready choice wherever a CT solution would be over-specified.',
+    highlights: [
+      { val: 'Class 1', lbl: 'Accuracy (IEC 62053-21)' },
+      { val: '8-tariff', lbl: 'Multi-tariff billing' },
+      { val: '10(100)A', lbl: 'Current range' },
+      { val: 'Modular', lbl: 'Swappable comms interface' },
+    ],
+    tags: ['Direct connection to 100 A', 'Active & reactive energy measurement', 'Up to 8 billing tariffs', 'Demand profile recording', 'Tamper detection & event logging', 'Modular comms (RS485 / PLC / NB-IoT)', 'DIN rail mounting option', 'AMI system ready'],
+    images: [
+      'images/Products/electrical_meter/DTSD1088 Three Phase Direct.png',
+    ],
+    specs: [
+      ['Standards', 'IEC 62052-11 · IEC 62053-21'],
+      ['Voltage', '3×230/400 V AC'],
+      ['Current range', '10(100) A'],
+      ['Accuracy class', 'Class 1'],
+      ['Frequency', '50 Hz / 60 Hz'],
+      ['Display', 'LCD with backlight'],
+      ['Communication', 'RS485 / PLC / NB-IoT (modular)'],
+      ['Installation', 'DIN rail or panel mount'],
+      ['Connection type', 'Direct (up to 100 A)'],
+      ['Enclosure rating', 'IP54'],
+      ['Operating temperature', '−25 °C to +55 °C'],
+    ],
+    tables: [
+      {
+        label: 'Metering & billing features',
+        headers: ['Feature', 'Detail'],
+        rows: [
+          ['Energy types', 'Active (kWh) + Reactive (kVArh)'],
+          ['Tariff support', 'Up to 8 tariffs'],
+          ['Demand profiling', 'Yes — configurable intervals'],
+          ['Tamper detection', 'Yes — with event logging'],
+          ['Communication module', 'Modular / field-replaceable'],
+          ['Mounting', 'DIN rail or panel mount'],
+        ]
+      }
+    ]
+  },
+
   'dcu-hxec300': {
     title: 'Data Concentrator Unit',
     model: 'Hexing HXEC300 · Litiot',
