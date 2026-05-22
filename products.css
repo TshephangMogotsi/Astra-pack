@@ -132,8 +132,35 @@
 }
 
 .prod-card-img {
+  position: relative;
   height: 240px;
-  background: #c8d8e8 center/cover no-repeat;
+  overflow: hidden;
+  background-color: #f5f8fc;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: var(--grid-size, 28px 28px);
+  background-position: center center;
+  transition: background-size 0.4s ease;
+}
+
+.prod-card:hover .prod-card-img {
+  background-size: var(--grid-size-hover, 24px 24px);
+}
+
+.prod-card-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--bg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease;
+}
+
+.prod-card:hover .prod-card-img::before {
+  transform: scale(1.06);
 }
 
 .prod-card-body {
