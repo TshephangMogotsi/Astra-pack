@@ -59,7 +59,7 @@
 
 .prod-section {
   padding: 60px 60px 80px;
-  background: #f5f8fc;
+  background: #F5F5F5;
   min-height: 60vh;
 }
 
@@ -206,47 +206,40 @@
   overflow: hidden;
 }
 
-/* ── TYPE LABEL ── */
+/* ── TYPE LABEL (pill chip) ── */
 
 .prod-type {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  align-self: center;
-}
-
-.prod-type--elec {
-  color: #0A6EBD;
-}
-
-.prod-type--water {
-  color: #1b7a56;
-}
-
-/* ── BADGE ── */
-
-.prod-badge {
   display: inline-block;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: #e6f2fb;
-  color: #0A6EBD;
-  border-radius: 4px;
-  padding: 3px 8px;
-  align-self: flex-start;
+  border-radius: 50px;
+  padding: 5px 14px;
+  align-self: center;
+  justify-self: end;
 }
 
-.prod-badge--commercial {
-  background: #e6f5f0;
-  color: #1b7a56;
+.prod-type--elec,
+.prod-type--water {
+  background: #0A6EBD;
+  color: #fff;
 }
 
+/* ── BADGE (plain text left label) ── */
+
+.prod-badge,
+.prod-badge--commercial,
 .prod-badge--industrial {
-  background: #fef3e6;
-  color: #b06a00;
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #0A6EBD;
+  background: none;
+  padding: 0;
+  align-self: center;
 }
 
 .prod-specs,
